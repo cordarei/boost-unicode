@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.0">
+  <compounddef id="dir_000000" kind="dir">
+    <compoundname>/home/rogier/c++/Unicode/boost_1_33_0/boost/</compoundname>
+    <innerdir refid="dir_000001">/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/"/>
+  </compounddef>
+</doxygen>

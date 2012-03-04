@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE section PUBLIC "-//Boost//DTD BoostBook XML V1.0//EN"
+  "http://www.boost.org/tools/boostbook/dtd/boostbook.dtd">
+<section last-revision="$Date: 2004/07/20 17:03:55 $">
+<title>Objectives</title>
+
+<para>The Unicode library aims to bring these aspects of the Unicode Standard to C++:</para>
+
+<itemizedlist>
+	<listitem>
+		Standardise how text is encoded, improving application interoperability.
+	</listitem>
+	<listitem>
+		Formalise aspects of text processing so that programmers do not need to do linguistics research themselves.
+	</listitem>
+</itemizedlist>
+
+<para>
+The documentation should take into account that some users won't want to know what a normalisation form is.
+The default interface to the library should therefore "just work".
+</para>
+
+<section>
+<title>Intended audience</title>
+
+<para>
+These developer archetypes are considered in designing the library:
+</para>
+
+<itemizedlist>
+	<listitem>
+		A developer who is used to <code>std:string</code> and would like to make his code Unicode compliant, but is unsure what Unicode is.
+	</listitem>
+	<listitem>
+		A developer who thinks he knows what Unicode is, but doesn't see why <code>std::wstring</code> isn't good enough.
+	</listitem>
+	<listitem>
+		A developer who is writing and selling Unicode grid controls and other custom UI controls and who is a Unicode expert, but who wants to be able to sit on top of a standard Unicode core library, not need to embed specific versions of Unicode data with every DLL, and be able to support customer defined characters in his controls.
+	</listitem>
+	<listitem>
+		A developer who is writing database level data conversion and format conversion code who wants to be able to process Unicode data to and from different formats.
+	</listitem>
+	<listitem>
+		A developer who needs to support Unicode in an embedded device where there is a high premium on memory, and who might want a smaller Unicode Character Database, but still use the standard Unicode template classes.
+	</listitem>
+</itemizedlist>
+
+</section>
+
+<section>
+<title>Features</title>
+
+<itemizedlist>
+	<listitem>
+		The system should use character data that is created by directly parsing <ulink url="http://www.unicode.org/Public/UNIDATA/">the Unicode Character Database files published on the Unicode website</ulink>.
+	</listitem>
+	<listitem>
+		The system should support integrating Private Range Characters on a per system basis.
+	</listitem>
+	<listitem>
+		Stream input and output in Unicode encoding forms and schemes (UTF) must be provided.
+		It must be easy to use byte order marks to identify types of encodings for files.
+	</listitem>
+	<listitem>
+		A Unicode string class that looks and feels like <code>std::string</code>, but which is Unicode compliant. It should work on grapheme clusters, i.e. "what users think of as characters". Normalisation form and encoding should be configurable, but have sensible defaults. Operations on strings as a whole should be fast but produce the expected results. (Searching for "Resume" should not match "Resumé"; collation should be consistent.)
+	</listitem>
+	<listitem>
+		Collation should be configurable according to the Unicode Collation Algorithm (collation level, punctuation handling).
+	</listitem>
+	<listitem>
+		A container must be provided that contains code points, and does not use the Unicode database at all, for those who know what they're doing.
+	</listitem>
+	<listitem>
+		The Unicode Character Data and the break, collation, and casing data should be accessible separately from the Unicode string.
+	</listitem>
+	<listitem>
+		The ability to customise the Unicode Character Database in whatever form a developer may see fit, by separating the internal database fields and structure from the standard interface used to access ucd data.
+		This will allow for different optimisations such as [at the simplest] omitting Unicode character names.
+	</listitem>
+	<listitem>
+		The system should not need to include almost 2 Megabytes of Unicode Character Data in every DLL.
+	</listitem>
+	<listitem>
+		The system should support direct integration of the Unicode derived data into an executable or DLL when required.
+	</listitem>
+	<listitem>
+		The system should support sharing Unicode Character Data across DLL boundaries and third party code boundaries.
+	</listitem>
+	<listitem>
+		The system should be stateless so that it is free-threaded in a multi-threaded environment.
+	</listitem>
+</itemizedlist>
+
+Todo:
+
+<itemizedlist>
+	<listitem>
+		Allowing locale-specific grapheme cluster handling, casing, and collation.
+	</listitem>
+	<listitem>
+		Allow combining two languages (e.g. sort Latin characters the French way, and Arabic characters the Iranian way) and tailoring.
+	</listitem>
+</itemizedlist>
+
+</section>
+
+</section>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.0">
+  <compounddef id="structboost_1_1unicode_1_1utf__mbstate" kind="struct" prot="public">
+    <compoundname>boost::unicode::utf_mbstate</compoundname>
+    <includes refid="character__types_8hpp" local="no">character_types.hpp</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The UTF conversion is not stateful since we rewind on partial conversions. </para>    </detaileddescription>
+    <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp" line="27" bodystart="27" bodyend="27"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

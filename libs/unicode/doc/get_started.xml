@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE section PUBLIC "-//Boost//DTD BoostBook XML V1.0//EN"
+  "http://www.boost.org/tools/boostbook/dtd/boostbook.dtd">
+<section id="unicode.get_started" last-revision="$Date: 2004/07/20 17:03:55 $">
+  <title>Get started quickly</title>
+
+<section>
+<title>A Unicode string</title>
+<programlisting>boost::unicode::string&lt;&gt; s;</programlisting>
+<para>This constructs an empty Unicode string s.
+A Unicode string consists of graphemes.
+A grapheme is what the user thinks of as a character, according to the definition in the Unicode Standard.
+Because these graphemes can have variable lengths, the string is not strictly speaking a sequence of unicode::grapheme objects, but for all practical purposes it is.
+Internally, <code>unicode::string</code> contains a sequence of code units (by default in UTF-16 and Normalisation Form C).
+This leads to a string that in terms of performance features the worst of both worlds. It does not allow random access; it has only bidirectional iterators.
+Inserting or replacing characters take O(n) time in the worst case (though using another underlying container than <code>std::basic_string</code> may result in other performance characteristics).
+<code>unicode::string</code> supplies all operations that std::string has, such as <code>append</code>, <code>insert</code>, and <code>find</code>.</para>
+</section>
+
+<section>
+<title>Constructing a string</title>
+</section>
+
+<section>
+<title>File input/output</title>
+</section>
+
+<section>
+<title>Comparing strings</title>
+</section>
+
+</section>

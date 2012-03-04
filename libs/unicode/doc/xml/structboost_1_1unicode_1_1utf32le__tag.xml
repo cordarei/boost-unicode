@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.0">
+  <compounddef id="structboost_1_1unicode_1_1utf32le__tag" kind="struct" prot="public">
+    <compoundname>boost::unicode::utf32le_tag</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp" line="43" bodystart="43" bodyend="43"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

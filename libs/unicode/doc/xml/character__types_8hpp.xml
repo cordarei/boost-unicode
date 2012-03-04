@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.0">
+  <compounddef id="character__types_8hpp" kind="file">
+    <compoundname>character_types.hpp</compoundname>
+    <includes local="no">boost/cstdint.hpp</includes>
+    <includedby refid="uni__character__properties_8hpp" local="no">/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp</includedby>
+    <includedby refid="codecvt_8hpp" local="no">/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp</includedby>
+    <includedby refid="fstream_8hpp" local="no">/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/fstream.hpp</includedby>
+    <incdepgraph>
+      <node id="0">
+        <label>/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp</label>
+        <link refid="character_types.hpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>boost/cstdint.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp</label>
+        <link refid="character_types.hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp</label>
+        <link refid="codecvt_8hpp"/>
+      </node>
+      <node id="3">
+        <label>/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp</label>
+        <link refid="uni__character__properties_8hpp-source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/fstream.hpp</label>
+        <link refid="fstream_8hpp-source"/>
+      </node>
+      <node id="4">
+        <label>/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_interface.hpp</label>
+        <link refid="uni__character__interface_8hpp-source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceboost_1_1unicode_1a0" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t boost::unicode::char8_t</definition>
+        <argsstring></argsstring>
+        <name>char8_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp" line="20" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceboost_1_1unicode_1a1" prot="public" static="no">
+        <type>uint16_t</type>
+        <definition>typedef uint16_t boost::unicode::char16_t</definition>
+        <argsstring></argsstring>
+        <name>char16_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp" line="21" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceboost_1_1unicode_1a2" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t boost::unicode::char32_t</definition>
+        <argsstring></argsstring>
+        <name>char32_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp" line="22" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceboost_1_1unicode_1a3" prot="public" static="no">
+        <type>char32_t</type>
+        <definition>typedef char32_t boost::unicode::codepoint</definition>
+        <argsstring></argsstring>
+        <name>codepoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp" line="23" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceboost_1_1unicode_1a4" prot="public" static="yes" volatile="no" mutable="no">
+        <type>static const codepoint</type>
+        <definition>const codepoint boost::unicode::replacement_character</definition>
+        <argsstring></argsstring>
+        <name>replacement_character</name>
+        <initializer> 0x0000fffd</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp" line="29" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceboost_1_1unicode_1a5" prot="public" static="yes" volatile="no" mutable="no">
+        <type>static const codepoint</type>
+        <definition>const codepoint boost::unicode::max_bmp</definition>
+        <argsstring></argsstring>
+        <name>max_bmp</name>
+        <initializer> 0x0000ffff</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp" line="30" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceboost_1_1unicode_1a6" prot="public" static="yes" volatile="no" mutable="no">
+        <type>static const codepoint</type>
+        <definition>const codepoint boost::unicode::max_codepoint</definition>
+        <argsstring></argsstring>
+        <name>max_codepoint</name>
+        <initializer> 0x0010ffff</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp" line="31" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceboost_1_1unicode_1a7" prot="public" static="yes" volatile="no" mutable="no">
+        <type>static const codepoint</type>
+        <definition>const codepoint boost::unicode::byte_order_mark</definition>
+        <argsstring></argsstring>
+        <name>byte_order_mark</name>
+        <initializer> 0xfeff</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp" line="32" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Define<sp/>Unicode<sp/>character<sp/>types.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Though<sp/>this<sp/>file<sp/>is<sp/>under<sp/>the<sp/>Boost<sp/>license,<sp/>it<sp/>is<sp/>NOT<sp/>(or<sp/>not<sp/>yet)<sp/>part<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Boost!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>Graham<sp/>Barnett,<sp/>Rogier<sp/>van<sp/>Dalen<sp/>2005.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use,<sp/>modification,<sp/>and<sp/>distribution<sp/>are<sp/>subject<sp/>to<sp/>the<sp/>Boost<sp/>Software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>License,<sp/>Version<sp/>1.0.<sp/>(See<sp/>accompanying<sp/>file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BOOST_UNICODE_CHARACTER_TYPES_HPP_INCLUDED</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOOST_UNICODE_CHARACTER_TYPES_HPP_INCLUDED</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/cstdint.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">boost</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">unicode<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>char8_t,<sp/>char16_t,<sp/>and<sp/>char32_t<sp/>should<sp/>be<sp/>unsigned.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>char8_t;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint16_t<sp/>char16_t;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/>char32_t;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>char32_t<sp/>codepoint;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structboost_1_1unicode_1_1utf__mbstate" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structboost_1_1unicode_1_1utf__mbstate" kindref="compound">utf_mbstate</ref><sp/>{};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>codepoint<sp/>replacement_character<sp/>=<sp/>0x0000fffd;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>codepoint<sp/>max_bmp<sp/>=<sp/>0x0000ffff;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>codepoint<sp/>max_codepoint<sp/>=<sp/>0x0010ffff;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>codepoint<sp/>byte_order_mark<sp/>=<sp/>0xfeff;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Unicode<sp/>encoding<sp/>forms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">utf8_tag<sp/>{};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">utf16_tag<sp/>{};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">utf32_tag<sp/>{};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Unicode<sp/>encoding<sp/>schemes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">utf16be_tag<sp/>{};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">utf16le_tag<sp/>{};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">utf32be_tag<sp/>{};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">utf32le_tag<sp/>{};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">detect_tag<sp/>{};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>unicode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>boost</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>BOOST_UNICODE_CHARACTER_TYPES_HPP_INCLUDED</highlight></codeline>
+    </programlisting>
+    <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp"/>
+  </compounddef>
+</doxygen>

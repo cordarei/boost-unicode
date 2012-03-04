@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE section PUBLIC "-//Boost//DTD BoostBook XML V1.0//EN"
+  "http://www.boost.org/tools/boostbook/dtd/boostbook.dtd">
+<section last-revision="$Date: 2004/07/20 17:03:55 $">
+
+<para>
+TODO: include <code>#include</code> dir information for all sections in a sensible way.
+</para>
+
+
+  <title>Introduction</title>
+
+<para>Before Unicode was invented, text to be processed with computers was usually in one of the hundreds of different available encoding systems. Because of their limited range, the encodings overlapped: one character would be in different positions in different encodings, and different encodings would contain different characters at one position. In an information-sharing age, with people from many different backgrounds and speaking many different languages using computers, confusion between encodings is likely to cause data corruption. Enter Unicode. Unicode, a generalisation of many earlier encodings, introduces a character range (21 bits) that should be large enough to hold all characters needed for all writing systems of the world without overlap.</para>
+
+<para>English-language text processing makes for relatively unproblematic computer programming. One of the more complicated mechanisms is casing: the lowercase letter 'f' and the capital letter 'F' have more or less the same semantics, and string comparisons can be case-insensitive. The complexity of this comes nowhere near that of comparing French strings with diacritics (the diacritics are compared from back to front), of normalising Hangul syllables, of allowing mathematicians to place arrows over any character, or even of uppercasing the Dutch word à. The rules the Unicode consortium has devised for multitext processing showcase the combined complexity of these and many other cases, taking into account languages' intricacies and corner cases. You cannot implement them in one afternoon.</para>
+
+<para>Unicode, however, is used wherever multilingual data is processed and it is required by such standards as XML and ECMAScript, and used by the filesystems of many a popular operation system. Unicode support is vital for interoperability with other applications, documents, libraries. The Boost Unicode library aims to bring Unicode to C++ without requiring intricate knowledge of the Unicode standard, while allowing Unicode experts to do advanced things.</para>
+
+<section>
+<title>Reader's Guide</title>
+<para>For those don't know the difference between such things as Normalisation Forms C and D: <xref linkend="unicode.get_started"/> is all you really need to read to get Unicode support working for your application. [...]</para>
+<para>The following external documents may be of interest if you want to know more about the Unicode standard.
+</para>
+<itemizedlist>
+	<listitem>
+		<ulink url="http://www.unicode.org/versions/latest">The Unicode standard</ulink>
+	</listitem>
+	<listitem>
+		<ulink url="http://www.unicode.org/faq">The Unicode FAQ</ulink>
+	</listitem>
+	<listitem>
+		<ulink url="http://www.unicode.org/reports/tr29">Unicode Technical Report 29: Text Boundaries</ulink>
+	</listitem>
+	<listitem>
+		<ulink url="http://www.unicode.org/reports/tr15">Unicode Technical Report 15: Unicode Normalization Forms</ulink>
+	</listitem>
+	<listitem>
+		<ulink url="http://www.unicode.org/reports/tr10">Unicode Technical Report 10: Unicode Collation [i.e. sorting] Algorithm</ulink>
+	</listitem>
+</itemizedlist>
+</section>
+
+</section>

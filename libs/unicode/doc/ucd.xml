@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE section PUBLIC "-//Boost//DTD BoostBook XML V1.0//EN"
+  "http://www.boost.org/tools/boostbook/dtd/boostbook.dtd">
+<section last-revision="$Date: 2004/07/20 17:03:55 $">
+<title>The Unicode Character Database</title>
+
+<para>The information provided in the Unicode Character Database is in a machine readable form, but not one that is useful for programmatically processing data according to the Unicode rules.
+Therefore, we wrote a parser that converts UCD files published on the <ulink url="http://www.unicode.org/ucd">Unicode web site</ulink> into C++.</para>
+
+<para>The system that uses the output of the data reader can be targeted at a particular version of the Unicode specification, and upgraded to the latest version of the Unicode specification as soon as new UCD files are published.
+Additionally program-specific private range data can be incorporated into a single, unified database, targeted at a particular solution, without any special handling or change in performance.</para>
+
+</section>

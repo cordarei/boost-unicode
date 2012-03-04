@@ -1,0 +1,211 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>UTF codecvt facets</title>
+<link rel="stylesheet" href="../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.67.2">
+<link rel="start" href="../index.html" title="Chapter 1. Unicode">
+<link rel="up" href="../index.html" title="Chapter 1. Unicode">
+<link rel="prev" href="../unicode/get_started.html" title="Get started quickly">
+<link rel="next" href="s04.html" title="Design notes">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table cellpadding="2" width="100%">
+<td valign="top"><img alt="boost.png (6897 bytes)" width="277" height="86" src="../../../../../boost.png"></td>
+<td align="center"><a href="../../../../../index.htm">Home</a></td>
+<td align="center"><a href="../libraries.html">Libraries</a></td>
+<td align="center"><a href="../../../../../people/people.htm">People</a></td>
+<td align="center"><a href="../../../../../more/faq.htm">FAQ</a></td>
+<td align="center"><a href="../../../../../more/index.htm">More</a></td>
+</table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="../unicode/get_started.html"><img src="../images/prev.png" alt="Prev"></a><a accesskey="u" href="../index.html"><img src="../images/up.png" alt="Up"></a><a accesskey="h" href="../index.html"><img src="../images/home.png" alt="Home"></a><a accesskey="n" href="s04.html"><img src="../images/next.png" alt="Next"></a>
+</div>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="id2509491"></a>UTF codecvt facets</h2></div></div></div>
+<div class="toc"><dl>
+<dt><span class="section"><a href="s03.html#id2509520">UTF comparison</a></span></dt>
+<dt><span class="section"><a href="s03.html#id2508450">UTF-encoded strings</a></span></dt>
+<dt><span class="section"><a href="s03.html#id2508457">Code conversion facets</a></span></dt>
+</dl></div>
+<p>
+UTF historically stands for <span class="emphasis"><em>Unicode Transformation Form</em></span>.
+UTF-32 is a encoding form that encodes every (21-bits) codepoint in a Unicode string with a 32-bits integer.
+UTF-16 encodes a codepoint as either one or two code units (16-bits integers).
+UTF-8 encodes a codepoint in one to our bytes.
+</p>
+<p>
+We'll first go into the properties of the encoding forms.
+(For more information about this, please see <a href="http://www.unicode.org/versions/latest" target="_top">The Unicode standard</a>.)
+We will then see how Unicode-encoded files can be read.
+</p>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id2509520"></a>UTF comparison</h3></div></div></div>
+<div class="toc"><dl><dt><span class="section"><a href="s03.html#id2508406">Byte order</a></span></dt></dl></div>
+<p>
+		UTF encodings all have the advantage over other mixed-width character encodings that the beginning of a character can always be found in constant time.
+		This means that if the code units get corrupted, the code points after the point of corruption are easily recovered.
+	</p>
+<p>
+		UTF-8 encodes codepoints using bytes.
+		The encoding has the nice property that ASCII text (with only character indices under 128) remains ASCII text.
+		Also, <code class="computeroutput">0x00</code> can only occur when a <code class="computeroutput">0</code> codepoint is encoded.
+		This means that UTF-8 can pretty easily be used with legacy software that does not know anything about Unicode and uses zero-terminated C-style string.
+		The amount of space taken by Unicode encodings is given in <a href="s03.html#unicode.utf-length" title="Table 1.1. UTF-8 encoding length">Table 1.1, &#8220;UTF-8 encoding length&#8221;</a>.
+	</p>
+<p>
+		UTF-16 encodes codepoints with 2 or 4 bytes.
+		It uses so-called surrogate pairs to encode codepoints higher than <code class="computeroutput">0xffff</code>.
+	</p>
+<p>
+		What encoding you should choose depends on the situation.
+		<a href="s03.html#unicode.utf-length" title="Table 1.1. UTF-8 encoding length">Table 1.1, &#8220;UTF-8 encoding length&#8221;</a> contains average lengths for scripts as found on <a href="http://icu.sourceforge.net/docs/papers/forms_of_unicode/" target="_top">the IBM Components for Unicode</a> website.
+		The disadvantage of UTF-32 in terms of storage (it wastes at least 11 bits for every codepoint by definition) may are made up for by its ease of processing. (Of course, the Unicode library does this for you).
+		However, note that processing Unicode strings usually takes more than just codepoints: grapheme clusters are often most interesting.
+		Handling grapheme clusters takes looking up codepoints in the character database; the amount of processor time this takes may easily swamp the time needed to process encoded codepoints.
+	</p>
+<div class="table">
+<a name="unicode.utf-length"></a><p class="title"><b>Table 1.1. UTF-8 encoding length</b></p>
+<table class="table" summary="UTF-8 encoding length">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>Codepoint range</th>
+<th>UTF-8</th>
+<th>UTF-16</th>
+<th>UTF-32</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+<code class="computeroutput">0x0000</code>&#8211;<code class="computeroutput">0x007f</code>
+</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>
+<code class="computeroutput">0x0080</code>&#8211;<code class="computeroutput">0x07ff</code>
+</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>
+<code class="computeroutput">0x0800</code>&#8211;<code class="computeroutput">0xffff</code>
+</td>
+<td>3</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>
+<code class="computeroutput">0x10000</code>&#8211;<code class="computeroutput">0x10ffff</code>
+</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Latin</td>
+<td>1.1</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Greek, Russian, Arabic, Hebrew</td>
+<td>1.7</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Most other scripts</td>
+<td>3</td>
+<td>2</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2508406"></a>Byte order</h4></div></div></div>
+<p>
+			So far, though I haven't explicitly said so, I've talked about strings in memory.
+			When serialising Unicode strings, however, the byte order (big-endian of little-endian) of the code units becomes important.
+			UTF-16 has the UTF-16BE and UTF-16LE <span class="emphasis"><em>Unicode encoding schemes</em></span>, and UTF-32 has UTF-32BE and UTF-32LE.
+			(In UTF-8 all code units are bytes, so the encoding scheme is trivially defined.)
+			Sometimes when reading files, the encoding form and the byte order are known, but sometimes they aren't.
+			For example, the <a href="http://www.w3.org/XML/" target="_top">XML Standard</a> requires that XML processors recognise whether the input file is in UTF-8 encoding form or in UTF-16, and in the latter case the byte order.
+			This is possible because the input files start with a <span class="emphasis"><em>byte order mark</em></span>, the codepoint <code class="computeroutput">0xFEFF</code>, or <code class="computeroutput">unicode::byte_order_mark</code>.
+		</p>
+</div>
+</div>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id2508450"></a>UTF-encoded strings</h3></div></div></div>
+<p>
+		TODO: write something about codepoint strings and about setting encoding for grapheme strings.
+	</p>
+</div>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id2508457"></a>Code conversion facets</h3></div></div></div>
+<p>
+		To read files that are in a mixed-length encoding such as UTF-8 and UTF-16, C++ uses code conversion facets.
+		The Unicode library defines the following for decoding and encoding UTF:
+	</p>
+<div class="itemizedlist"><ul type="disc">
+<li><code class="computeroutput">boost::unicode::utf8_codecvt</code></li>
+<li><code class="computeroutput">boost::unicode::utf16be_codecvt</code></li>
+<li><code class="computeroutput">boost::unicode::utf16le_codecvt</code></li>
+<li><code class="computeroutput">boost::unicode::utf32be_codecvt</code></li>
+<li><code class="computeroutput">boost::unicode::utf32le_codecvt</code></li>
+</ul></div>
+<p>
+		To use one of these to read or write a file, you can simply say:
+	</p>
+<pre class="programlisting">
+boost::unicode::ifstream file ("test.txt");
+std::locale utf8_locale (std::locale(), new boost::unicode::utf8_codecvt);
+file.imbue (utf8_locale);</pre>
+<p>
+		If you don't know what encoding an input file is in, but you do know that it starts with a byte order mark, you may use <code class="computeroutput">boost::unicode::use_byte_order_mark</code>.
+	</p>
+<pre class="programlisting">
+boost::unicode::ifstream file ("test.txt");
+boost::unicode::use_byte_order_mark (file);</pre>
+<p><code class="computeroutput">boost::unicode::use_byte_order_mark</code> extracts the byte order mark from the stream and switches to the corresponding codecvt.
+		If no byte order mark is found, the default is UTF-8.
+		This nicely corresponds to the XML standard's way of using the byte order mark: XML enforces byte order marks for UTF-16-encoded files, and allows them for files in UTF-8 encoding.
+	</p>
+<p>
+		When writing a file, you know what encoding you want it to have.
+		If the file needs a byte order mark, you can start with one explicitly:
+	</p>
+<pre class="programlisting">
+boost::unicode::ifstream file ("test.txt");
+std::locale utf16be_locale (std::locale(), new boost::unicode::utf16be_locale);
+file.imbue (utf16be_locale);
+file &lt;&lt; boost::unicode::byte_order_mark;</pre>
+</div>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"><small><p>Last revised: July 20, 2004 at 17:03:55 GMT</p></small></td>
+<td align="right"><small>Copyright © 2005 Graham Barnett, Rogier van Dalen</small></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="../unicode/get_started.html"><img src="../images/prev.png" alt="Prev"></a><a accesskey="u" href="../index.html"><img src="../images/up.png" alt="Up"></a><a accesskey="h" href="../index.html"><img src="../images/home.png" alt="Home"></a><a accesskey="n" href="s04.html"><img src="../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

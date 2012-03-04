@@ -1,0 +1,31 @@
+# Build information for the Unicode library.
+# Though this file is under the Boost license, it is NOT (or not yet) part of
+# Boost!
+
+# Copyright Graham Barnett, Rogier van Dalen 2005.
+# Use, modification, and distribution are subject to the Boost Software
+# License, Version 1.0. (See accompanying file LICENSE_1_0.txt or copy at
+# http://www.boost.org/LICENSE_1_0.txt)
+
+# For more information, see http://www.boost.org
+
+# declare the location of this subproject relative to the root
+subproject libs/unicode/test ;
+
+# bring in rules for testing
+import testing ;
+
+# Make tests run by default.
+DEPENDS all : test ;
+
+{
+  # look in BOOST_ROOT for sources first, just in this Jamfile
+  local SEARCH_SOURCE = $(BOOST_ROOT) $(SEARCH_SOURCE) ;
+
+  test-suite unicode
+    : 
+    [ run libs/unicode/test/character_properties_test.cpp <lib>../build/boost_unicode <dll>../build/boost_unicode_ucd :  :  : <define>BOOST_ALL_NO_LIB=1 :  ]
+
+    [ run libs/unicode/test/codecvt_test.cpp <lib>../build/boost_unicode <lib>../../test/build/boost_test_exec_monitor :  :  : <define>BOOST_ALL_NO_LIB=1 :  ]
+  ;
+}

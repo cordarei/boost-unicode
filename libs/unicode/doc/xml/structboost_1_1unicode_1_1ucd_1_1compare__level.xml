@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.0">
+  <compounddef id="structboost_1_1unicode_1_1ucd_1_1compare__level" kind="struct" prot="public">
+    <compoundname>boost::unicode::ucd::compare_level</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structboost_1_1unicode_1_1ucd_1_1compare__level_1w5" prot="public" static="no">
+        <name>type</name>
+        <enumvalue id="structboost_1_1unicode_1_1ucd_1_1compare__level_1w5w0" prot="public">
+          <name>Insensitive</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1ucd_1_1compare__level_1w5w1" prot="public">
+          <name>Accents</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1ucd_1_1compare__level_1w5w2" prot="public">
+          <name>CaseAccents</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1ucd_1_1compare__level_1w5w3" prot="public">
+          <name>CaseAccentsPunctuation</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1ucd_1_1compare__level_1w5w4" prot="public">
+          <name>Full</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_interface.hpp" line="37" bodystart="36" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_interface.hpp" line="35" bodystart="34" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structboost_1_1unicode_1_1ucd_1_1compare__level_1w5w1" prot="public" virt="non-virtual"><scope>boost::unicode::ucd::compare_level</scope><name>Accents</name></member>
+      <member refid="structboost_1_1unicode_1_1ucd_1_1compare__level_1w5w2" prot="public" virt="non-virtual"><scope>boost::unicode::ucd::compare_level</scope><name>CaseAccents</name></member>
+      <member refid="structboost_1_1unicode_1_1ucd_1_1compare__level_1w5w3" prot="public" virt="non-virtual"><scope>boost::unicode::ucd::compare_level</scope><name>CaseAccentsPunctuation</name></member>
+      <member refid="structboost_1_1unicode_1_1ucd_1_1compare__level_1w5w4" prot="public" virt="non-virtual"><scope>boost::unicode::ucd::compare_level</scope><name>Full</name></member>
+      <member refid="structboost_1_1unicode_1_1ucd_1_1compare__level_1w5w0" prot="public" virt="non-virtual"><scope>boost::unicode::ucd::compare_level</scope><name>Insensitive</name></member>
+      <member refid="structboost_1_1unicode_1_1ucd_1_1compare__level_1w5" prot="public" virt="non-virtual"><scope>boost::unicode::ucd::compare_level</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

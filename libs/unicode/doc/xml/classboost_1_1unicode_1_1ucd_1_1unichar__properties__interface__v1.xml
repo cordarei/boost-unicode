@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.0">
+  <compounddef id="classboost_1_1unicode_1_1ucd_1_1unichar__properties__interface__v1" kind="class" prot="public">
+    <compoundname>boost::unicode::ucd::unichar_properties_interface_v1</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_interface.hpp" line="106" bodystart="105" bodyend="108"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

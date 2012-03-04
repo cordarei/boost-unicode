@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.0">
+  <compounddef id="structboost_1_1unicode_1_1word__boundary" kind="struct" prot="public">
+    <compoundname>boost::unicode::word_boundary</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structboost_1_1unicode_1_1word__boundary_1w9" prot="public" static="no">
+        <name>type</name>
+        <enumvalue id="structboost_1_1unicode_1_1word__boundary_1w9w0" prot="public">
+          <name>format</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1word__boundary_1w9w1" prot="public">
+          <name>katakana</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1word__boundary_1w9w2" prot="public">
+          <name>aletter</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1word__boundary_1w9w3" prot="public">
+          <name>midletter</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1word__boundary_1w9w4" prot="public">
+          <name>midnum</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1word__boundary_1w9w5" prot="public">
+          <name>numeric</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1word__boundary_1w9w6" prot="public">
+          <name>extendnumlet</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1word__boundary_1w9w7" prot="public">
+          <name>any</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1word__boundary_1w9w8" prot="public">
+          <name>__count</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="232" bodystart="231" bodyend="243"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="230" bodystart="229" bodyend="244"/>
+    <listofallmembers>
+      <member refid="structboost_1_1unicode_1_1word__boundary_1w9w8" prot="public" virt="non-virtual"><scope>boost::unicode::word_boundary</scope><name>__count</name></member>
+      <member refid="structboost_1_1unicode_1_1word__boundary_1w9w2" prot="public" virt="non-virtual"><scope>boost::unicode::word_boundary</scope><name>aletter</name></member>
+      <member refid="structboost_1_1unicode_1_1word__boundary_1w9w7" prot="public" virt="non-virtual"><scope>boost::unicode::word_boundary</scope><name>any</name></member>
+      <member refid="structboost_1_1unicode_1_1word__boundary_1w9w6" prot="public" virt="non-virtual"><scope>boost::unicode::word_boundary</scope><name>extendnumlet</name></member>
+      <member refid="structboost_1_1unicode_1_1word__boundary_1w9w0" prot="public" virt="non-virtual"><scope>boost::unicode::word_boundary</scope><name>format</name></member>
+      <member refid="structboost_1_1unicode_1_1word__boundary_1w9w1" prot="public" virt="non-virtual"><scope>boost::unicode::word_boundary</scope><name>katakana</name></member>
+      <member refid="structboost_1_1unicode_1_1word__boundary_1w9w3" prot="public" virt="non-virtual"><scope>boost::unicode::word_boundary</scope><name>midletter</name></member>
+      <member refid="structboost_1_1unicode_1_1word__boundary_1w9w4" prot="public" virt="non-virtual"><scope>boost::unicode::word_boundary</scope><name>midnum</name></member>
+      <member refid="structboost_1_1unicode_1_1word__boundary_1w9w5" prot="public" virt="non-virtual"><scope>boost::unicode::word_boundary</scope><name>numeric</name></member>
+      <member refid="structboost_1_1unicode_1_1word__boundary_1w9" prot="public" virt="non-virtual"><scope>boost::unicode::word_boundary</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

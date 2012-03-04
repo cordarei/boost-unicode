@@ -1,0 +1,19 @@
+#project boost/doc ;
+
+import toolset ;
+import boostbook : boostbook ;
+toolset.using doxygen ;
+
+import toolset ;
+toolset.using doxygen ;
+
+boostbook unicode :
+	unicode.xml
+	reference
+	: <xsl:param>boost.root=../../../..
+	;
+
+doxygen reference 
+    : [ glob ../../../boost/unicode/*.hpp ]
+	: <prefix>boost/unicode
+	;

@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.0">
+  <compounddef id="fstream_8hpp" kind="file">
+    <compoundname>fstream.hpp</compoundname>
+    <includes local="no">fstream</includes>
+    <includes local="no">locale</includes>
+    <includes refid="character__types_8hpp" local="no">boost/unicode/character_types.hpp</includes>
+    <includes local="no">boost/unicode/detail/char_traits.hpp</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>locale</label>
+      </node>
+      <node id="16">
+        <label>boost/unicode/character_types.hpp</label>
+        <link refid="character__types_8hpp-source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>fstream</label>
+      </node>
+      <node id="17">
+        <label>boost/cstdint.hpp</label>
+      </node>
+      <node id="18">
+        <label>boost/unicode/detail/char_traits.hpp</label>
+      </node>
+      <node id="13">
+        <label>/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/fstream.hpp</label>
+        <link refid="fstream.hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceboost_1_1unicode_1a8" prot="public" static="no">
+        <type>std::basic_fstream&lt; codepoint, char_traits&lt; codepoint &gt; &gt;</type>
+        <definition>typedef std::basic_fstream&lt;codepoint, char_traits &lt;codepoint&gt; &gt; boost::unicode::fstream</definition>
+        <argsstring></argsstring>
+        <name>fstream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/fstream.hpp" line="24" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceboost_1_1unicode_1a9" prot="public" static="no">
+        <type>std::basic_ifstream&lt; codepoint, char_traits&lt; codepoint &gt; &gt;</type>
+        <definition>typedef std::basic_ifstream&lt;codepoint, char_traits &lt;codepoint&gt; &gt; boost::unicode::ifstream</definition>
+        <argsstring></argsstring>
+        <name>ifstream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/fstream.hpp" line="26" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceboost_1_1unicode_1a10" prot="public" static="no">
+        <type>std::basic_ofstream&lt; codepoint, char_traits&lt; codepoint &gt; &gt;</type>
+        <definition>typedef std::basic_ofstream&lt;codepoint, char_traits &lt;codepoint&gt; &gt; boost::unicode::ofstream</definition>
+        <argsstring></argsstring>
+        <name>ofstream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/fstream.hpp" line="28" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceboost_1_1unicode_1a20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void use_byte_order_mark</definition>
+        <argsstring>(std::basic_istream&lt; codepoint, char_traits&lt; codepoint &gt; &gt; &amp;)</argsstring>
+        <name>use_byte_order_mark</name>
+        <param>
+          <type>std::basic_istream&lt; codepoint, char_traits&lt; codepoint &gt; &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extract any byte order mark from the input stream and imbue the corresponding UTF codecvt facet. This is useful if the Unicode encoding of a file is not known.</para><para>The position of the get pointer is placed after the byte order mark. If no byte order mark is found, a UTF-8 codecvt facet is imbued and the get pointer is reset. This behaviour is according to the Unicode standard, which discourages use of the byte order mark for UTF-8 files, and the XML standard, which allows but does not enforce the byte order mark.</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/fstream.hpp" line="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Define<sp/>a<sp/>Unicode<sp/>file<sp/>stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Though<sp/>this<sp/>file<sp/>is<sp/>under<sp/>the<sp/>Boost<sp/>license,<sp/>it<sp/>is<sp/>NOT<sp/>(or<sp/>not<sp/>yet)<sp/>part<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Boost!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>Graham<sp/>Barnett,<sp/>Rogier<sp/>van<sp/>Dalen<sp/>2005.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use,<sp/>modification,<sp/>and<sp/>distribution<sp/>are<sp/>subject<sp/>to<sp/>the<sp/>Boost<sp/>Software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>License,<sp/>Version<sp/>1.0.<sp/>(See<sp/>accompanying<sp/>file<sp/>LICENSE_1_0.txt<sp/>or<sp/>copy<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>http://www.boost.org/LICENSE_1_0.txt)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BOOST_UNICODE_FSTREAM_HPP_INCLUDED</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOOST_UNICODE_FSTREAM_HPP_INCLUDED</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;locale&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/unicode/character_types.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/unicode/detail/char_traits.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">boost</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">unicode<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::basic_fstream<sp/>&lt;codepoint,<sp/>char_traits<sp/>&lt;codepoint&gt;<sp/>&gt;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fstream;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::basic_ifstream<sp/>&lt;codepoint,<sp/>char_traits<sp/>&lt;codepoint&gt;<sp/>&gt;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ifstream;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::basic_ofstream<sp/>&lt;codepoint,<sp/>char_traits<sp/>&lt;codepoint&gt;<sp/>&gt;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ofstream;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>use_byte_order_mark<sp/>(</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::basic_istream<sp/>&lt;codepoint,<sp/>char_traits<sp/>&lt;codepoint&gt;<sp/>&gt;<sp/>&amp;);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>unicode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>boost</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>BOOST_UNICODE_FSTREAM_HPP_INCLUDED</highlight></codeline>
+    </programlisting>
+    <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/fstream.hpp"/>
+  </compounddef>
+</doxygen>

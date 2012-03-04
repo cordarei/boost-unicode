@@ -1,0 +1,514 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.0">
+  <compounddef id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4" kind="class" prot="public">
+    <compoundname>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</compoundname>
+    <includes refid="codecvt_8hpp" local="no">codecvt.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>InternT</declname>
+        <defname>InternT</defname>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>ExternT</declname>
+        <defname>ExternT</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1w0" prot="public" static="no">
+        <type>InternT</type>
+        <definition>typedef InternT std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::intern_type</definition>
+        <argsstring></argsstring>
+        <name>intern_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="32" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1w1" prot="public" static="no">
+        <type>ExternT</type>
+        <definition>typedef ExternT std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::extern_type</definition>
+        <argsstring></argsstring>
+        <name>extern_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="33" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1w2" prot="public" static="no">
+        <type>codecvt_base::result</type>
+        <definition>typedef codecvt_base::result std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="35" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1w3" prot="public" static="no">
+        <type><ref refid="structboost_1_1unicode_1_1utf__mbstate" kindref="compound">boost::unicode::utf_mbstate</ref></type>
+        <definition>typedef boost::unicode::utf_mbstate std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::state_type</definition>
+        <argsstring></argsstring>
+        <name>state_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="36" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>result</type>
+        <definition>result std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::out</definition>
+        <argsstring>(state_type &amp;state, const intern_type *from, const intern_type *from_end, const intern_type *&amp;from_next, extern_type *to, extern_type *to_end, extern_type *&amp;to_next) const </argsstring>
+        <name>out</name>
+        <param>
+          <type><ref refid="structboost_1_1unicode_1_1utf__mbstate" kindref="compound">state_type</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const intern_type *</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const intern_type *</type>
+          <declname>from_end</declname>
+        </param>
+        <param>
+          <type>const intern_type *&amp;</type>
+          <declname>from_next</declname>
+        </param>
+        <param>
+          <type>extern_type *</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>extern_type *</type>
+          <declname>to_end</declname>
+        </param>
+        <param>
+          <type>extern_type *&amp;</type>
+          <declname>to_next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="43" bodystart="38" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>result</type>
+        <definition>result std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::unshift</definition>
+        <argsstring>(state_type &amp;state, extern_type *to, extern_type *to_end, extern_type *&amp;to_next) const </argsstring>
+        <name>unshift</name>
+        <param>
+          <type><ref refid="structboost_1_1unicode_1_1utf__mbstate" kindref="compound">state_type</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>extern_type *</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>extern_type *</type>
+          <declname>to_end</declname>
+        </param>
+        <param>
+          <type>extern_type *&amp;</type>
+          <declname>to_next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="50" bodystart="48" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>result</type>
+        <definition>result std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::in</definition>
+        <argsstring>(state_type &amp;state, const extern_type *from, const extern_type *from_end, const extern_type *&amp;from_next, intern_type *to, intern_type *to_end, intern_type *&amp;to_next) const </argsstring>
+        <name>in</name>
+        <param>
+          <type><ref refid="structboost_1_1unicode_1_1utf__mbstate" kindref="compound">state_type</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const extern_type *</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const extern_type *</type>
+          <declname>from_end</declname>
+        </param>
+        <param>
+          <type>const extern_type *&amp;</type>
+          <declname>from_next</declname>
+        </param>
+        <param>
+          <type>intern_type *</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>intern_type *</type>
+          <declname>to_end</declname>
+        </param>
+        <param>
+          <type>intern_type *&amp;</type>
+          <declname>to_next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="58" bodystart="54" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::encoding</definition>
+        <argsstring>() const </argsstring>
+        <name>encoding</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="63" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::always_noconv</definition>
+        <argsstring>() const </argsstring>
+        <name>always_noconv</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="65" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::length</definition>
+        <argsstring>(const state_type &amp;state, const extern_type *from, const extern_type *end, size_t max) const </argsstring>
+        <name>length</name>
+        <param>
+          <type>const <ref refid="structboost_1_1unicode_1_1utf__mbstate" kindref="compound">state_type</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const extern_type *</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const extern_type *</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="69" bodystart="67" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::max_length</definition>
+        <argsstring>() const </argsstring>
+        <name>max_length</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="73" bodystart="73" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1s0" prot="public" static="yes" volatile="no" mutable="no">
+        <type>static locale::id</type>
+        <definition>locale::id std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="75" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b0" prot="protected" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::codecvt</definition>
+        <argsstring>(size_t r=0)</argsstring>
+        <name>codecvt</name>
+        <param>
+          <type>size_t</type>
+          <declname>r</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="79" bodystart="78" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b1" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>virtual</type>
+        <definition>virtual std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::~codecvt</definition>
+        <argsstring>()</argsstring>
+        <name>~codecvt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="81" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b2" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>virtual result</type>
+        <definition>virtual result std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::do_out</definition>
+        <argsstring>(state_type &amp;state, const intern_type *from, const intern_type *from_end, const intern_type *&amp;from_next, extern_type *to, extern_type *to_end, extern_type *&amp;to_next) const </argsstring>
+        <name>do_out</name>
+        <param>
+          <type><ref refid="structboost_1_1unicode_1_1utf__mbstate" kindref="compound">state_type</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const intern_type *</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const intern_type *</type>
+          <declname>from_end</declname>
+        </param>
+        <param>
+          <type>const intern_type *&amp;</type>
+          <declname>from_next</declname>
+        </param>
+        <param>
+          <type>extern_type *</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>extern_type *</type>
+          <declname>to_end</declname>
+        </param>
+        <param>
+          <type>extern_type *&amp;</type>
+          <declname>to_next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="87" bodystart="83" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b3" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>virtual result</type>
+        <definition>virtual result std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::do_in</definition>
+        <argsstring>(state_type &amp;state, const extern_type *from, const extern_type *from_end, const extern_type *&amp;from_next, intern_type *to, intern_type *to_end, intern_type *&amp;to_next) const </argsstring>
+        <name>do_in</name>
+        <param>
+          <type><ref refid="structboost_1_1unicode_1_1utf__mbstate" kindref="compound">state_type</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const extern_type *</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const extern_type *</type>
+          <declname>from_end</declname>
+        </param>
+        <param>
+          <type>const extern_type *&amp;</type>
+          <declname>from_next</declname>
+        </param>
+        <param>
+          <type>intern_type *</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>intern_type *</type>
+          <declname>to_end</declname>
+        </param>
+        <param>
+          <type>intern_type *&amp;</type>
+          <declname>to_next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="96" bodystart="92" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b4" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>virtual int</type>
+        <definition>virtual int std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::do_length</definition>
+        <argsstring>(const state_type &amp;state, const extern_type *from, const extern_type *from_end, size_t max) const </argsstring>
+        <name>do_length</name>
+        <param>
+          <type>const <ref refid="structboost_1_1unicode_1_1utf__mbstate" kindref="compound">state_type</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const extern_type *</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const extern_type *</type>
+          <declname>from_end</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="104" bodystart="101" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b5" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>virtual int</type>
+        <definition>virtual int std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::do_encoding</definition>
+        <argsstring>() const </argsstring>
+        <name>do_encoding</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="110" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b6" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>virtual bool</type>
+        <definition>virtual bool std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::do_always_noconv</definition>
+        <argsstring>() const </argsstring>
+        <name>do_always_noconv</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="112" bodystart="112" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b7" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>virtual std::codecvt_base::result</type>
+        <definition>virtual std::codecvt_base::result std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::do_unshift</definition>
+        <argsstring>(boost::unicode::utf_mbstate &amp;, extern_type *to, extern_type *to_end, extern_type *&amp;next) const </argsstring>
+        <name>do_unshift</name>
+        <param>
+          <type><ref refid="structboost_1_1unicode_1_1utf__mbstate" kindref="compound">boost::unicode::utf_mbstate</ref> &amp;</type>
+        </param>
+        <param>
+          <type>extern_type *</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>extern_type *</type>
+          <declname>to_end</declname>
+        </param>
+        <param>
+          <type>extern_type *&amp;</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="119" bodystart="116" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b8" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>virtual int</type>
+        <definition>virtual int std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;::do_max_length</definition>
+        <argsstring>() const </argsstring>
+        <name>do_max_length</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="125" bodystart="124" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>std::codecvt must be specialised for other encodings. Though the boost::unicode::utf*_codecvt inherit from this, the virtual methods need to be here to prevent linking errors. This also provides the empty implementations </para>    </detaileddescription>
+    <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="30" bodystart="28" bodyend="129"/>
+    <listofallmembers>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a4" prot="public" virt="non-virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>always_noconv</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b0" prot="protected" virt="non-virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>codecvt</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b6" prot="protected" virt="virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>do_always_noconv</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b5" prot="protected" virt="virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>do_encoding</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b3" prot="protected" virt="virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>do_in</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b4" prot="protected" virt="virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>do_length</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b8" prot="protected" virt="virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>do_max_length</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b2" prot="protected" virt="virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>do_out</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b7" prot="protected" virt="virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>do_unshift</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a3" prot="public" virt="non-virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>encoding</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1w1" prot="public" virt="non-virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>extern_type</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1s0" prot="public" virt="non-virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>id</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a2" prot="public" virt="non-virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>in</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1w0" prot="public" virt="non-virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>intern_type</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a5" prot="public" virt="non-virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>length</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a6" prot="public" virt="non-virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>max_length</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a0" prot="public" virt="non-virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>out</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1w2" prot="public" virt="non-virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>result</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1w3" prot="public" virt="non-virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>state_type</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a1" prot="public" virt="non-virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>unshift</name></member>
+      <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b1" prot="protected" virt="virtual"><scope>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</scope><name>~codecvt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

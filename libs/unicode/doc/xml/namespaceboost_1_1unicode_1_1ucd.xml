@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.0">
+  <compounddef id="namespaceboost_1_1unicode_1_1ucd" kind="namespace">
+    <compoundname>boost::unicode::ucd</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceboost_1_1unicode_1_1ucd_1a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool is_grapheme_break</definition>
+        <argsstring>(grapheme_cluster_break::type b1,\grapheme_cluster_break::type b2)\</argsstring>
+        <name>is_grapheme_break</name>
+        <param>
+          <type>grapheme_cluster_break::type</type>
+          <declname>b1</declname>
+        </param>
+        <param>
+          <type>\grapheme_cluster_break::type</type>
+          <declname>b2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_interface.hpp" line="133" bodystart="131" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1unicode_1_1ucd_1a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>InputIterator</declname>
+            <defname>InputIterator</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void find_complex_line_break</definition>
+        <argsstring>(unichar_properties_interface_v1 *uinterface, InputIterator &amp;curr, InputIterator &amp;last, std::vector&lt; break_action::type &gt; &amp;tbl_break_output)</argsstring>
+        <name>find_complex_line_break</name>
+        <param>
+          <type>unichar_properties_interface_v1 *</type>
+          <declname>uinterface</declname>
+        </param>
+        <param>
+          <type>InputIterator &amp;</type>
+          <declname>curr</declname>
+        </param>
+        <param>
+          <type>InputIterator &amp;</type>
+          <declname>last</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; break_action::type &gt; &amp;</type>
+          <declname>tbl_break_output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_interface.hpp" line="152" bodystart="149" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1unicode_1_1ucd_1a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+            <declname>InputIterator</declname>
+            <defname>InputIterator</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_line_breaks</definition>
+        <argsstring>(unichar_properties_interface_v1 *uinterface, InputIterator first, InputIterator last, bool fTailorSPCM, std::vector&lt; break_action::type &gt; &amp;tbl_break_output)</argsstring>
+        <name>get_line_breaks</name>
+        <param>
+          <type>unichar_properties_interface_v1 *</type>
+          <declname>uinterface</declname>
+        </param>
+        <param>
+          <type>InputIterator</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>InputIterator</type>
+          <declname>last</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fTailorSPCM</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; break_action::type &gt; &amp;</type>
+          <declname>tbl_break_output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_interface.hpp" line="195" bodystart="191" bodyend="328"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceboost_1_1unicode_1_1ucd_1a0" prot="public" static="no" volatile="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t boost::unicode::ucd::g_tbl_grapheme_lookup[]</definition>
+        <argsstring>[]</argsstring>
+        <name>g_tbl_grapheme_lookup</name>
+        <initializer> 
+         
+        { 0xFD,   0xFF,   0xFF,   0xDF,   0x37,   0x27,   0x37,   0x27}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_interface.hpp" line="129" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceboost_1_1unicode_1_1ucd_1a1" prot="public" static="no" volatile="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t boost::unicode::ucd::tbl_break_pairs[21][21]</definition>
+        <argsstring>[21][21]</argsstring>
+        <name>tbl_break_pairs</name>
+        <initializer>
+
+
+{{ 4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  3,  4  },  
+{  0,  4,  1,  1,  4,  4,  4,  4,  0,  1,  0,  0,  0,  0,  1,  1,  0,  0,  4,  2,  4  },  
+{  4,  4,  1,  1,  1,  4,  4,  4,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  4,  2,  4  },  
+{  1,  4,  1,  1,  1,  4,  4,  4,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  4,  2,  4  },  
+{  0,  4,  1,  1,  1,  4,  4,  4,  0,  0,  0,  0,  0,  0,  1,  1,  0,  0,  4,  2,  4  },  
+{  0,  4,  1,  1,  1,  4,  4,  4,  0,  0,  0,  0,  0,  0,  1,  1,  0,  0,  4,  2,  4  },  
+{  0,  4,  1,  1,  1,  4,  4,  4,  0,  0,  1,  0,  0,  0,  1,  1,  0,  0,  4,  2,  4  },  
+{  0,  4,  1,  1,  1,  4,  4,  4,  0,  0,  1,  1,  0,  0,  1,  1,  0,  0,  4,  2,  4  },  
+{  1,  4,  1,  1,  1,  4,  4,  4,  0,  0,  1,  1,  1,  0,  1,  1,  0,  0,  4,  2,  4  },  
+{  0,  4,  1,  1,  1,  4,  4,  4,  0,  0,  0,  0,  0,  0,  1,  1,  0,  0,  4,  2,  4  },  
+{  0,  4,  1,  1,  1,  4,  4,  4,  0,  1,  1,  1,  0,  1,  1,  1,  0,  0,  4,  2,  4  },  
+{  0,  4,  1,  1,  1,  4,  4,  4,  0,  0,  1,  1,  0,  1,  1,  1,  0,  0,  4,  2,  4  },  
+{  0,  4,  1,  1,  1,  4,  4,  4,  0,  1,  0,  0,  0,  1,  1,  1,  0,  0,  4,  2,  4  },  
+{  0,  4,  1,  1,  1,  4,  4,  4,  0,  0,  0,  0,  0,  1,  1,  1,  0,  0,  4,  2,  4  },  
+{  0,  4,  1,  1,  1,  4,  4,  4,  0,  0,  1,  0,  0,  0,  1,  1,  0,  0,  4,  2,  4  },  
+{  0,  4,  1,  1,  1,  4,  4,  4,  0,  0,  0,  0,  0,  0,  1,  1,  0,  0,  4,  2,  4  },  
+{  1,  4,  1,  1,  1,  4,  4,  4,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  4,  2,  4  },  
+{  0,  4,  1,  1,  1,  4,  4,  4,  0,  0,  0,  0,  0,  0,  1,  1,  0,  4,  4,  2,  4  },  
+{  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  4,  0,  0  },  
+{  0,  4,  1,  1,  1,  4,  4,  4,  0,  0,  1,  1,  0,  1,  1,  1,  0,  0,  4,  2,  4  },  
+{  1,  4,  1,  1,  1,  4,  4,  4,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  4,  2,  4  }}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_interface.hpp" line="187" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_interface.hpp" line="29"/>
+  </compounddef>
+</doxygen>

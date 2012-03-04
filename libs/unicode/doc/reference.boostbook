@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<library-reference>
+  <header name="boost/unicode/character_types.hpp"/>
+  <header name="boost/unicode/codecvt.hpp">
+    <para>Define a UTF-8 codecvt fact.</para>
+  </header>
+  <header name="boost/unicode/fstream.hpp"/>
+  <header name="boost/unicode/uni_character_interface.hpp">
+    <macro name="declare_unichar_properties_interface_v1" kind="functionlike">
+      <macro-parameter name="Pure"/>
+    </macro>
+  </header>
+  <header name="boost/unicode/uni_character_properties.hpp"/>
+</library-reference>

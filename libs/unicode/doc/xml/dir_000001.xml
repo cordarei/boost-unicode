@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.0">
+  <compounddef id="dir_000001" kind="dir">
+    <compoundname>/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/</compoundname>
+    <innerfile refid="character__types_8hpp">character_types.hpp</innerfile>
+    <innerfile refid="codecvt_8hpp">codecvt.hpp</innerfile>
+    <innerfile refid="fstream_8hpp">fstream.hpp</innerfile>
+    <innerfile refid="uni__character__interface_8hpp">uni_character_interface.hpp</innerfile>
+    <innerfile refid="uni__character__properties_8hpp">uni_character_properties.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/"/>
+  </compounddef>
+</doxygen>

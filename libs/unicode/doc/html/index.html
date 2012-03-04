@@ -1,0 +1,104 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Chapter 1. Unicode</title>
+<link rel="stylesheet" href="boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.67.2">
+<link rel="start" href="index.html" title="Chapter 1. Unicode">
+<link rel="next" href="unicode/get_started.html" title="Get started quickly">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table cellpadding="2" width="100%">
+<td valign="top"><img alt="boost.png (6897 bytes)" width="277" height="86" src="../../../../boost.png"></td>
+<td align="center"><a href="../../../../index.htm">Home</a></td>
+<td align="center"><a href="libraries.html">Libraries</a></td>
+<td align="center"><a href="../../../../people/people.htm">People</a></td>
+<td align="center"><a href="../../../../more/faq.htm">FAQ</a></td>
+<td align="center"><a href="../../../../more/index.htm">More</a></td>
+</table>
+<hr>
+<div class="spirit-nav"><a accesskey="n" href="unicode/get_started.html"><img src="images/next.png" alt="Next"></a></div>
+<div class="chapter" lang="en">
+<div class="titlepage"><div>
+<div><h2 class="title">
+<a name="unicode"></a>Chapter 1. Unicode</h2></div>
+<div><div class="author"><h3 class="author">
+<span class="firstname">Graham</span> <span class="surname">Barnett</span>
+</h3></div></div>
+<div><div class="author"><h3 class="author">
+<span class="firstname">Rogier</span> <span class="surname">van Dalen</span>
+</h3></div></div>
+<div><p class="copyright">Copyright © 2005 Graham Barnett, Rogier van Dalen</p></div>
+<div><div class="legalnotice">
+<a name="id2557245"></a><p>Use, modification and distribution is subject to the Boost
+		Software License, Version 1.0. (See accompanying file
+		<code class="filename">LICENSE_1_0.txt</code> or copy at <a href="http://www.boost.org/LICENSE_1_0.txt" target="_top">http://www.boost.org/LICENSE_1_0.txt</a>)</p>
+</div></div>
+</div></div>
+<div class="toc">
+<p><b>Table of Contents</b></p>
+<dl>
+<dt><span class="section"><a href="index.html#id2509194">Introduction</a></span></dt>
+<dd><dl><dt><span class="section"><a href="index.html#id2509254">Reader's Guide</a></span></dt></dl></dd>
+<dt><span class="section"><a href="unicode/get_started.html">Get started quickly</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="unicode/get_started.html#id2509420">A Unicode string</a></span></dt>
+<dt><span class="section"><a href="unicode/get_started.html#id2509480">Constructing a string</a></span></dt>
+<dt><span class="section"><a href="unicode/get_started.html#id2509484">File input/output</a></span></dt>
+<dt><span class="section"><a href="unicode/get_started.html#id2509488">Comparing strings</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="index/s03.html">UTF codecvt facets</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="index/s03.html#id2509520">UTF comparison</a></span></dt>
+<dt><span class="section"><a href="index/s03.html#id2508450">UTF-encoded strings</a></span></dt>
+<dt><span class="section"><a href="index/s03.html#id2508457">Code conversion facets</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="index/s04.html">Design notes</a></span></dt>
+<dd><dl><dt><span class="section"><a href="index/s04.html#id2508571">C++ locales</a></span></dt></dl></dd>
+<dt><span class="section"><a href="index/s05.html">The Unicode Character Database</a></span></dt>
+<dt><span class="section"><a href="index/s06.html">Objectives</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="index/s06.html#id2508679">Intended audience</a></span></dt>
+<dt><span class="section"><a href="index/s06.html#id2508726">Features</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="unicode/reference.html">Reference</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="unicode/reference.html#id2321161">Header &lt;boost/unicode/codecvt.hpp&gt;</a></span></dt>
+<dt><span class="section"><a href="unicode/reference.html#id2340210">Header &lt;boost/unicode/uni_character_interface.hpp&gt;</a></span></dt>
+</dl></dd>
+</dl>
+</div>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="id2509194"></a>Introduction</h2></div></div></div>
+<div class="toc"><dl><dt><span class="section"><a href="index.html#id2509254">Reader's Guide</a></span></dt></dl></div>
+<p>
+TODO: include <code class="computeroutput">#include</code> dir information for all sections in a sensible way.
+</p>
+<p>Before Unicode was invented, text to be processed with computers was usually in one of the hundreds of different available encoding systems. Because of their limited range, the encodings overlapped: one character would be in different positions in different encodings, and different encodings would contain different characters at one position. In an information-sharing age, with people from many different backgrounds and speaking many different languages using computers, confusion between encodings is likely to cause data corruption. Enter Unicode. Unicode, a generalisation of many earlier encodings, introduces a character range (21 bits) that should be large enough to hold all characters needed for all writing systems of the world without overlap.</p>
+<p>English-language text processing makes for relatively unproblematic computer programming. One of the more complicated mechanisms is casing: the lowercase letter 'f' and the capital letter 'F' have more or less the same semantics, and string comparisons can be case-insensitive. The complexity of this comes nowhere near that of comparing French strings with diacritics (the diacritics are compared from back to front), of normalising Hangul syllables, of allowing mathematicians to place arrows over any character, or even of uppercasing the Dutch word à. The rules the Unicode consortium has devised for multitext processing showcase the combined complexity of these and many other cases, taking into account languages' intricacies and corner cases. You cannot implement them in one afternoon.</p>
+<p>Unicode, however, is used wherever multilingual data is processed and it is required by such standards as XML and ECMAScript, and used by the filesystems of many a popular operation system. Unicode support is vital for interoperability with other applications, documents, libraries. The Boost Unicode library aims to bring Unicode to C++ without requiring intricate knowledge of the Unicode standard, while allowing Unicode experts to do advanced things.</p>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id2509254"></a>Reader's Guide</h3></div></div></div>
+<p>For those don't know the difference between such things as Normalisation Forms C and D: <a href="unicode/get_started.html" title="Get started quickly">the section called &#8220;Get started quickly&#8221;</a> is all you really need to read to get Unicode support working for your application. [...]</p>
+<p>The following external documents may be of interest if you want to know more about the Unicode standard.
+</p>
+<div class="itemizedlist"><ul type="disc">
+<li><a href="http://www.unicode.org/versions/latest" target="_top">The Unicode standard</a></li>
+<li><a href="http://www.unicode.org/faq" target="_top">The Unicode FAQ</a></li>
+<li><a href="http://www.unicode.org/reports/tr29" target="_top">Unicode Technical Report 29: Text Boundaries</a></li>
+<li><a href="http://www.unicode.org/reports/tr15" target="_top">Unicode Technical Report 15: Unicode Normalization Forms</a></li>
+<li><a href="http://www.unicode.org/reports/tr10" target="_top">Unicode Technical Report 10: Unicode Collation [i.e. sorting] Algorithm</a></li>
+</ul></div>
+</div>
+</div>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"><small><p>Last revised: July 31, 2005 at 16:48:07 GMT</p></small></td>
+<td align="right"><small></small></td>
+</tr></table>
+<hr>
+<div class="spirit-nav"><a accesskey="n" href="unicode/get_started.html"><img src="images/next.png" alt="Next"></a></div>
+</body>
+</html>

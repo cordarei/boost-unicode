@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.0">
+  <compounddef id="structboost_1_1unicode_1_1sentence__boundary" kind="struct" prot="public">
+    <compoundname>boost::unicode::sentence_boundary</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structboost_1_1unicode_1_1sentence__boundary_1w12" prot="public" static="no">
+        <name>type</name>
+        <enumvalue id="structboost_1_1unicode_1_1sentence__boundary_1w12w0" prot="public">
+          <name>sep</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1sentence__boundary_1w12w1" prot="public">
+          <name>format</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1sentence__boundary_1w12w2" prot="public">
+          <name>sp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1sentence__boundary_1w12w3" prot="public">
+          <name>lower</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1sentence__boundary_1w12w4" prot="public">
+          <name>upper</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1sentence__boundary_1w12w5" prot="public">
+          <name>oletter</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1sentence__boundary_1w12w6" prot="public">
+          <name>numeric</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1sentence__boundary_1w12w7" prot="public">
+          <name>aterm</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1sentence__boundary_1w12w8" prot="public">
+          <name>sterm</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1sentence__boundary_1w12w9" prot="public">
+          <name>close</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1sentence__boundary_1w12w10" prot="public">
+          <name>any</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1sentence__boundary_1w12w11" prot="public">
+          <name>__count</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="250" bodystart="249" bodyend="264"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="248" bodystart="247" bodyend="265"/>
+    <listofallmembers>
+      <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w11" prot="public" virt="non-virtual"><scope>boost::unicode::sentence_boundary</scope><name>__count</name></member>
+      <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w10" prot="public" virt="non-virtual"><scope>boost::unicode::sentence_boundary</scope><name>any</name></member>
+      <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w7" prot="public" virt="non-virtual"><scope>boost::unicode::sentence_boundary</scope><name>aterm</name></member>
+      <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w9" prot="public" virt="non-virtual"><scope>boost::unicode::sentence_boundary</scope><name>close</name></member>
+      <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w1" prot="public" virt="non-virtual"><scope>boost::unicode::sentence_boundary</scope><name>format</name></member>
+      <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w3" prot="public" virt="non-virtual"><scope>boost::unicode::sentence_boundary</scope><name>lower</name></member>
+      <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w6" prot="public" virt="non-virtual"><scope>boost::unicode::sentence_boundary</scope><name>numeric</name></member>
+      <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w5" prot="public" virt="non-virtual"><scope>boost::unicode::sentence_boundary</scope><name>oletter</name></member>
+      <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w0" prot="public" virt="non-virtual"><scope>boost::unicode::sentence_boundary</scope><name>sep</name></member>
+      <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w2" prot="public" virt="non-virtual"><scope>boost::unicode::sentence_boundary</scope><name>sp</name></member>
+      <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w8" prot="public" virt="non-virtual"><scope>boost::unicode::sentence_boundary</scope><name>sterm</name></member>
+      <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12" prot="public" virt="non-virtual"><scope>boost::unicode::sentence_boundary</scope><name>type</name></member>
+      <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w4" prot="public" virt="non-virtual"><scope>boost::unicode::sentence_boundary</scope><name>upper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

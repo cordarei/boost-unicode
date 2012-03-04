@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.0">
+  <compounddef id="structboost_1_1unicode_1_1break__class" kind="struct" prot="public">
+    <compoundname>boost::unicode::break_class</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structboost_1_1unicode_1_1break__class_1w37" prot="public" static="no">
+        <name>type</name>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w0" prot="public">
+          <name>mandatory</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w1" prot="public">
+          <name>carriage_return</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w2" prot="public">
+          <name>line_feed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w3" prot="public">
+          <name>combining_mark</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w4" prot="public">
+          <name>next_line</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w5" prot="public">
+          <name>surrogate</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w6" prot="public">
+          <name>word_joiner</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w7" prot="public">
+          <name>zero_width_space</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w8" prot="public">
+          <name>non_breaking</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w9" prot="public">
+          <name>contingent_break_opportunity</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w10" prot="public">
+          <name>space</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w11" prot="public">
+          <name>break_opportunity_before_after</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w12" prot="public">
+          <name>break_opportunity_after</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w13" prot="public">
+          <name>break_opportunity_before</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w14" prot="public">
+          <name>hyphen</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w15" prot="public">
+          <name>closing_punctuation</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w16" prot="public">
+          <name>exclamation_interrogation</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w17" prot="public">
+          <name>inseparable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w18" prot="public">
+          <name>non_starter</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w19" prot="public">
+          <name>opening_punctuation</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w20" prot="public">
+          <name>ambiguous_quotation</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w21" prot="public">
+          <name>infix_separator</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w22" prot="public">
+          <name>numeric</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w23" prot="public">
+          <name>postfix_numeric</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w24" prot="public">
+          <name>prefix_numeric</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w25" prot="public">
+          <name>symbol_allowing_break</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w26" prot="public">
+          <name>ambiguous</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w27" prot="public">
+          <name>ordinary_alpabetic_or_symbol_character</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w28" prot="public">
+          <name>hangul_lv_syllable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w29" prot="public">
+          <name>hangul_lvt_syllable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w30" prot="public">
+          <name>ideograph</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w31" prot="public">
+          <name>hangul_l_jamo</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w32" prot="public">
+          <name>hangul_v_jamo</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w33" prot="public">
+          <name>hangul_t_jamo</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w34" prot="public">
+          <name>complex_context</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w35" prot="public">
+          <name>unknown</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__class_1w37w36" prot="public">
+          <name>__count</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="121" bodystart="120" bodyend="160"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="119" bodystart="118" bodyend="161"/>
+    <listofallmembers>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w36" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>__count</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w26" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>ambiguous</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w20" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>ambiguous_quotation</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w12" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>break_opportunity_after</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w13" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>break_opportunity_before</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w11" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>break_opportunity_before_after</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w1" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>carriage_return</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w15" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>closing_punctuation</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w3" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>combining_mark</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w34" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>complex_context</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w9" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>contingent_break_opportunity</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w16" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>exclamation_interrogation</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w31" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>hangul_l_jamo</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w28" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>hangul_lv_syllable</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w29" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>hangul_lvt_syllable</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w33" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>hangul_t_jamo</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w32" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>hangul_v_jamo</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w14" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>hyphen</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w30" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>ideograph</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w21" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>infix_separator</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w17" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>inseparable</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w2" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>line_feed</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w0" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>mandatory</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w4" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>next_line</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w8" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>non_breaking</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w18" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>non_starter</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w22" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>numeric</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w19" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>opening_punctuation</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w27" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>ordinary_alpabetic_or_symbol_character</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w23" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>postfix_numeric</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w24" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>prefix_numeric</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w10" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>space</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w5" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>surrogate</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w25" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>symbol_allowing_break</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>type</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w35" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>unknown</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w6" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>word_joiner</name></member>
+      <member refid="structboost_1_1unicode_1_1break__class_1w37w7" prot="public" virt="non-virtual"><scope>boost::unicode::break_class</scope><name>zero_width_space</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

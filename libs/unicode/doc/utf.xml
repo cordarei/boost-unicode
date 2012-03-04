@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE section PUBLIC "-//Boost//DTD BoostBook XML V1.0//EN"
+  "http://www.boost.org/tools/boostbook/dtd/boostbook.dtd">
+<section last-revision="$Date: 2004/07/20 17:03:55 $">
+<title>UTF codecvt facets</title>
+
+<para>
+UTF historically stands for <emphasis>Unicode Transformation Form</emphasis>.
+UTF-32 is a encoding form that encodes every (21-bits) codepoint in a Unicode string with a 32-bits integer.
+UTF-16 encodes a codepoint as either one or two code units (16-bits integers).
+UTF-8 encodes a codepoint in one to our bytes.
+</para>
+
+<para>
+We'll first go into the properties of the encoding forms.
+(For more information about this, please see <ulink url="http://www.unicode.org/versions/latest">The Unicode standard</ulink>.)
+We will then see how encodings can be used for strings, and how Unicode-encoded files can be read.
+</para>
+
+<section>
+	<title>UTF comparison</title>
+	<para>
+		UTF encodings all have the advantage over other mixed-width character encodings that the beginning of a character can always be found in constant time.
+		This means that if the code units get corrupted, the code points after the point of corruption are easily recovered.
+	</para>
+
+	<para>
+		UTF-8 encodes codepoints using bytes.
+		The encoding has the nice property that ASCII text (with only character indices under 128) remains ASCII text.
+		Also, <code>0x00</code> can only occur when a <code>0</code> codepoint is encoded.
+		This means that UTF-8 can pretty easily be used with legacy software that does not know anything about Unicode and uses zero-terminated C-style string.
+		The amount of space taken by Unicode encodings is given in <xref linkend="unicode.utf-length"/>.
+	</para>
+
+	<para>
+		UTF-16 encodes codepoints with 2 or 4 bytes.
+		It uses so-called surrogate pairs to encode codepoints higher than <code>0xffff</code>.
+	</para>
+
+	<para>
+		What encoding you should choose depends on the situation.
+		<xref linkend="unicode.utf-length"/> contains average lengths for scripts as found on <ulink url="http://icu.sourceforge.net/docs/papers/forms_of_unicode/">the IBM Components for Unicode</ulink> website.
+		The disadvantage of UTF-32 in terms of storage (it wastes at least 11 bits for every codepoint by definition) may are made up for by its ease of processing. (Of course, the Unicode library does this for you).
+		However, note that processing Unicode strings usually takes more than just codepoints: grapheme clusters are often most interesting.
+		Handling grapheme clusters takes looking up codepoints in the character database; the amount of processor time this takes may easily swamp the time needed to process encoded codepoints.
+	</para>
+
+	<table id="unicode.utf-length">
+		<title>UTF-8 encoding length</title>
+		<tgroup cols="4">
+			<thead>
+				<row>
+					<entry>Codepoint range</entry>
+					<entry>UTF-8</entry>
+					<entry>UTF-16</entry>
+					<entry>UTF-32</entry>
+				</row>
+			</thead>
+			<tbody>
+				<row>
+					<entry><code>0x0000</code>&ndash;<code>0x007f</code></entry>
+					<entry>1</entry>
+					<entry>2</entry>
+					<entry>4</entry>
+				</row>
+				<row>
+					<entry><code>0x0080</code>&ndash;<code>0x07ff</code></entry>
+					<entry>2</entry>
+					<entry>2</entry>
+					<entry>4</entry>
+				</row>
+				<row>
+					<entry><code>0x0800</code>&ndash;<code>0xffff</code></entry>
+					<entry>3</entry>
+					<entry>2</entry>
+					<entry>4</entry>
+				</row>
+				<row>
+					<entry><code>0x10000</code>&ndash;<code>0x10ffff</code></entry>
+					<entry>4</entry>
+					<entry>4</entry>
+					<entry>4</entry>
+				</row>
+
+				<row>
+					<entry>Latin</entry>
+					<entry>1.1</entry>
+					<entry>2</entry>
+					<entry>4</entry>
+				</row>
+				<row>
+					<entry>Greek, Russian, Arabic, Hebrew</entry>
+					<entry>1.7</entry>
+					<entry>2</entry>
+					<entry>4</entry>
+				</row>
+				<row>
+					<entry>Most other scripts</entry>
+					<entry>3</entry>
+					<entry>2</entry>
+					<entry>4</entry>
+				</row>
+			</tbody>
+		</tgroup>
+	</table>
+
+	<section>
+		<title>Byte order</title>
+		<para>
+			So far, though I haven't explicitly said so, I've talked about strings in memory.
+			When serialising Unicode strings, however, the byte order (big-endian of little-endian) of the code units becomes important.
+			UTF-16 has the UTF-16BE and UTF-16LE <emphasis>Unicode encoding schemes</emphasis>, and UTF-32 has UTF-32BE and UTF-32LE.
+			(In UTF-8 all code units are bytes, so the encoding scheme is trivially defined.)
+			Sometimes when reading files, the encoding form and the byte order are known, but sometimes they aren't.
+			For example, the <ulink url="http://www.w3.org/XML/">XML Standard</ulink> requires that XML processors recognise whether the input file is in UTF-8 encoding form or in UTF-16, and in the latter case the byte order.
+			This is possible because the input files start with a <emphasis>byte order mark</emphasis>, the codepoint <code>0xFEFF</code>, or <code>unicode::byte_order_mark</code>.
+		</para>
+	</section>
+</section>
+
+<section>
+	<title>UTF-encoded strings</title>
+
+	<para>
+		TODO: write something about codepoint strings and about setting encoding for grapheme strings.
+	</para>
+
+	<para>
+		TODO: say something about how string with different encodings are automatically converted.
+	</para>
+</section>
+
+<section>
+	<title>Code conversion facets</title>
+	<para>
+		To read files that are in a mixed-length encoding such as UTF-8 and UTF-16, C++ uses code conversion facets.
+		The Unicode library defines the following for decoding and encoding UTF:
+	</para>
+	<itemizedlist>
+		<listitem>
+			<classname>boost::unicode::utf8_codecvt</classname>
+		</listitem>
+		<listitem>
+			<classname>boost::unicode::utf16be_codecvt</classname>
+		</listitem>
+		<listitem>
+			<classname>boost::unicode::utf16le_codecvt</classname>
+		</listitem>
+		<listitem>
+			<classname>boost::unicode::utf32be_codecvt</classname>
+		</listitem>
+		<listitem>
+			<classname>boost::unicode::utf32le_codecvt</classname>
+		</listitem>
+	</itemizedlist>
+
+	<para>
+		To use one of these to read or write a file, you can simply say:
+	</para>
+
+	<programlisting>
+boost::unicode::ifstream file ("test.txt");
+std::locale utf8_locale (std::locale(), new boost::unicode::utf8_codecvt);
+file.imbue (utf8_locale);</programlisting>
+
+	<para>
+		If you don't know what encoding an input file is in, but you do know that it starts with a byte order mark, you may use <functionname>boost::unicode::use_byte_order_mark</functionname>.
+	</para>
+
+	<programlisting>
+boost::unicode::ifstream file ("test.txt");
+boost::unicode::use_byte_order_mark (file);</programlisting>
+
+	<para>
+		<functionname>boost::unicode::use_byte_order_mark</functionname> extracts the byte order mark from the stream and switches to the corresponding codecvt.
+		If no byte order mark is found, the default is UTF-8.
+		This nicely corresponds to the XML standard's way of using the byte order mark: XML enforces byte order marks for UTF-16-encoded files, and allows them for files in UTF-8 encoding.
+	</para>
+
+	<para>
+		When writing a file, you know what encoding you want it to have.
+		If the file needs a byte order mark, you can start with one explicitly:
+	</para>
+
+	<programlisting>
+boost::unicode::ifstream file ("test.txt");
+std::locale utf16be_locale (std::locale(), new boost::unicode::utf16be_locale);
+file.imbue (utf16be_locale);
+file &lt;&lt; boost::unicode::byte_order_mark;</programlisting>
+</section>
+
+</section>

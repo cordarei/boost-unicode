@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Get started quickly</title>
+<link rel="stylesheet" href="../boostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.67.2">
+<link rel="start" href="../index.html" title="Chapter 1. Unicode">
+<link rel="up" href="../index.html" title="Chapter 1. Unicode">
+<link rel="prev" href="../index.html" title="Chapter 1. Unicode">
+<link rel="next" href="../index/s03.html" title="UTF codecvt facets">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table cellpadding="2" width="100%">
+<td valign="top"><img alt="boost.png (6897 bytes)" width="277" height="86" src="../../../../../boost.png"></td>
+<td align="center"><a href="../../../../../index.htm">Home</a></td>
+<td align="center"><a href="../libraries.html">Libraries</a></td>
+<td align="center"><a href="../../../../../people/people.htm">People</a></td>
+<td align="center"><a href="../../../../../more/faq.htm">FAQ</a></td>
+<td align="center"><a href="../../../../../more/index.htm">More</a></td>
+</table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="../index.html"><img src="../images/prev.png" alt="Prev"></a><a accesskey="u" href="../index.html"><img src="../images/up.png" alt="Up"></a><a accesskey="h" href="../index.html"><img src="../images/home.png" alt="Home"></a><a accesskey="n" href="../index/s03.html"><img src="../images/next.png" alt="Next"></a>
+</div>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="unicode.get_started"></a>Get started quickly</h2></div></div></div>
+<div class="toc"><dl>
+<dt><span class="section"><a href="get_started.html#id2509420">A Unicode string</a></span></dt>
+<dt><span class="section"><a href="get_started.html#id2509480">Constructing a string</a></span></dt>
+<dt><span class="section"><a href="get_started.html#id2509484">File input/output</a></span></dt>
+<dt><span class="section"><a href="get_started.html#id2509488">Comparing strings</a></span></dt>
+</dl></div>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id2509420"></a>A Unicode string</h3></div></div></div>
+<pre class="programlisting">boost::unicode::string&lt;&gt; s;</pre>
+<p>This constructs an empty Unicode string s.
+A Unicode string consists of graphemes.
+A grapheme is what the user thinks of as a character, according to the definition in the Unicode Standard.
+Because these graphemes can have variable lengths, the string is not strictly speaking a sequence of unicode::grapheme objects, but for all practical purposes it is.
+Internally, <code class="computeroutput">unicode::string</code> contains a sequence of code units (by default in UTF-16 and Normalisation Form C).
+This leads to a string that in terms of performance features the worst of both worlds. It does not allow random access; it has only bidirectional iterators.
+Inserting or replacing characters take O(n) time in the worst case (though using another underlying container than <code class="computeroutput">std::basic_string</code> may result in other performance characteristics).
+<code class="computeroutput">unicode::string</code> supplies all operations that std::string has, such as <code class="computeroutput">append</code>, <code class="computeroutput">insert</code>, and <code class="computeroutput">find</code>.</p>
+</div>
+<div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title">
+<a name="id2509480"></a>Constructing a string</h3></div></div></div></div>
+<div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title">
+<a name="id2509484"></a>File input/output</h3></div></div></div></div>
+<div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title">
+<a name="id2509488"></a>Comparing strings</h3></div></div></div></div>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"><small><p>Last revised: July 20, 2004 at 17:03:55 GMT</p></small></td>
+<td align="right"><small>Copyright © 2005 Graham Barnett, Rogier van Dalen</small></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="../index.html"><img src="../images/prev.png" alt="Prev"></a><a accesskey="u" href="../index.html"><img src="../images/up.png" alt="Up"></a><a accesskey="h" href="../index.html"><img src="../images/home.png" alt="Home"></a><a accesskey="n" href="../index/s03.html"><img src="../images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.0">
+  <compounddef id="structboost_1_1unicode_1_1category" kind="struct" prot="public">
+    <compoundname>boost::unicode::category</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structboost_1_1unicode_1_1category_1w32" prot="public" static="no">
+        <name>type</name>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w0" prot="public">
+          <name>letter_uppercase</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w1" prot="public">
+          <name>letter_lowercase</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w2" prot="public">
+          <name>letter_titlecase</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w3" prot="public">
+          <name>letter_modifier</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w4" prot="public">
+          <name>letter_other</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w5" prot="public">
+          <name>mark_nonspacing</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w6" prot="public">
+          <name>mark_spacing_combining</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w7" prot="public">
+          <name>mark_enclosing</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w8" prot="public">
+          <name>number_decimal_digit</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w9" prot="public">
+          <name>number_letter</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w10" prot="public">
+          <name>number_other</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w11" prot="public">
+          <name>punctuation_connector</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w12" prot="public">
+          <name>punctuation_dash</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w13" prot="public">
+          <name>punctuation_open</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w14" prot="public">
+          <name>punctuation_close</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w15" prot="public">
+          <name>punctuation_initial_quote</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w16" prot="public">
+          <name>punctuation_final_quote</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w17" prot="public">
+          <name>punctuation_other</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w18" prot="public">
+          <name>symbol_math</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w19" prot="public">
+          <name>symbol_currency</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w20" prot="public">
+          <name>symbol_modifier</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w21" prot="public">
+          <name>symbol_other</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w22" prot="public">
+          <name>separator_space</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w23" prot="public">
+          <name>separator_line</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w24" prot="public">
+          <name>separator_paragraph</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w25" prot="public">
+          <name>other_control</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w26" prot="public">
+          <name>other_format</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w27" prot="public">
+          <name>other_surrogate</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w28" prot="public">
+          <name>other_private_use</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w29" prot="public">
+          <name>other_not_assigned</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w30" prot="public">
+          <name>unknown</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1category_1w32w31" prot="public">
+          <name>__count</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="30" bodystart="29" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="28" bodystart="27" bodyend="67"/>
+    <listofallmembers>
+      <member refid="structboost_1_1unicode_1_1category_1w32w31" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>__count</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w1" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>letter_lowercase</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w3" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>letter_modifier</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w4" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>letter_other</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w2" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>letter_titlecase</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w0" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>letter_uppercase</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w7" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>mark_enclosing</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w5" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>mark_nonspacing</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w6" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>mark_spacing_combining</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w8" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>number_decimal_digit</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w9" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>number_letter</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w10" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>number_other</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w25" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>other_control</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w26" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>other_format</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w29" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>other_not_assigned</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w28" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>other_private_use</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w27" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>other_surrogate</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w14" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>punctuation_close</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w11" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>punctuation_connector</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w12" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>punctuation_dash</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w16" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>punctuation_final_quote</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w15" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>punctuation_initial_quote</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w13" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>punctuation_open</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w17" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>punctuation_other</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w23" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>separator_line</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w24" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>separator_paragraph</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w22" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>separator_space</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w19" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>symbol_currency</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w18" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>symbol_math</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w20" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>symbol_modifier</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w21" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>symbol_other</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>type</name></member>
+      <member refid="structboost_1_1unicode_1_1category_1w32w30" prot="public" virt="non-virtual"><scope>boost::unicode::category</scope><name>unknown</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

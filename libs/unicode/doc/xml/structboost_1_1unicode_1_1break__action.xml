@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.0">
+  <compounddef id="structboost_1_1unicode_1_1break__action" kind="struct" prot="public">
+    <compoundname>boost::unicode::break_action</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structboost_1_1unicode_1_1break__action_1w7" prot="public" static="no">
+        <name>type</name>
+        <enumvalue id="structboost_1_1unicode_1_1break__action_1w7w0" prot="public">
+          <name>direct</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__action_1w7w1" prot="public">
+          <name>indirect</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__action_1w7w2" prot="public">
+          <name>combining_indirect</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__action_1w7w3" prot="public">
+          <name>combining_prohibited</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__action_1w7w4" prot="public">
+          <name>prohibited</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__action_1w7w5" prot="public">
+          <name>always</name>
+          <initializer> 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1break__action_1w7w6" prot="public">
+          <name>__count</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="167" bodystart="166" bodyend="176"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="165" bodystart="164" bodyend="177"/>
+    <listofallmembers>
+      <member refid="structboost_1_1unicode_1_1break__action_1w7w6" prot="public" virt="non-virtual"><scope>boost::unicode::break_action</scope><name>__count</name></member>
+      <member refid="structboost_1_1unicode_1_1break__action_1w7w5" prot="public" virt="non-virtual"><scope>boost::unicode::break_action</scope><name>always</name></member>
+      <member refid="structboost_1_1unicode_1_1break__action_1w7w2" prot="public" virt="non-virtual"><scope>boost::unicode::break_action</scope><name>combining_indirect</name></member>
+      <member refid="structboost_1_1unicode_1_1break__action_1w7w3" prot="public" virt="non-virtual"><scope>boost::unicode::break_action</scope><name>combining_prohibited</name></member>
+      <member refid="structboost_1_1unicode_1_1break__action_1w7w0" prot="public" virt="non-virtual"><scope>boost::unicode::break_action</scope><name>direct</name></member>
+      <member refid="structboost_1_1unicode_1_1break__action_1w7w1" prot="public" virt="non-virtual"><scope>boost::unicode::break_action</scope><name>indirect</name></member>
+      <member refid="structboost_1_1unicode_1_1break__action_1w7w4" prot="public" virt="non-virtual"><scope>boost::unicode::break_action</scope><name>prohibited</name></member>
+      <member refid="structboost_1_1unicode_1_1break__action_1w7" prot="public" virt="non-virtual"><scope>boost::unicode::break_action</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

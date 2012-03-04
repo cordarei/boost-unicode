@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.0">
+  <compounddef id="classboost_1_1unicode_1_1utf32be__codecvt" kind="class" prot="public">
+    <compoundname>boost::unicode::utf32be_codecvt</compoundname>
+    <includes refid="codecvt_8hpp" local="no">codecvt.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classboost_1_1unicode_1_1utf32be__codecvt_1w0" prot="public" static="no">
+        <type>codepoint</type>
+        <definition>typedef codepoint boost::unicode::utf32be_codecvt::intern_type</definition>
+        <argsstring></argsstring>
+        <name>intern_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="272" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classboost_1_1unicode_1_1utf32be__codecvt_1w1" prot="public" static="no">
+        <type>char</type>
+        <definition>typedef char boost::unicode::utf32be_codecvt::extern_type</definition>
+        <argsstring></argsstring>
+        <name>extern_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="273" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classboost_1_1unicode_1_1utf32be__codecvt_1a0" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::unicode::utf32be_codecvt::utf32be_codecvt</definition>
+        <argsstring>(std::size_t r=0)</argsstring>
+        <name>utf32be_codecvt</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>r</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="277" bodystart="275" bodyend="277"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classboost_1_1unicode_1_1utf32be__codecvt_1b0" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>virtual int</type>
+        <definition>virtual int boost::unicode::utf32be_codecvt::do_encoding</definition>
+        <argsstring>() const </argsstring>
+        <name>do_encoding</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="281" bodystart="281" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1unicode_1_1utf32be__codecvt_1b1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>virtual std::codecvt_base::result</type>
+        <definition>virtual std::codecvt_base::result boost::unicode::utf32be_codecvt::do_in</definition>
+        <argsstring>(utf_mbstate &amp;state, const char *from, const char *from_end, const char *&amp;from_next, codepoint *to, codepoint *to_end, codepoint *&amp;to_next) const </argsstring>
+        <name>do_in</name>
+        <param>
+          <type><ref refid="structboost_1_1unicode_1_1utf__mbstate" kindref="compound">utf_mbstate</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>from_end</declname>
+        </param>
+        <param>
+          <type>const char *&amp;</type>
+          <declname>from_next</declname>
+        </param>
+        <param>
+          <type>codepoint *</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>codepoint *</type>
+          <declname>to_end</declname>
+        </param>
+        <param>
+          <type>codepoint *&amp;</type>
+          <declname>to_next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1unicode_1_1utf32be__codecvt_1b2" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>virtual std::codecvt_base::result</type>
+        <definition>virtual std::codecvt_base::result boost::unicode::utf32be_codecvt::do_out</definition>
+        <argsstring>(utf_mbstate &amp;state, const codepoint *from, const codepoint *from_end, const codepoint *&amp;from_next, char *to, char *to_end, char *&amp;to_next) const </argsstring>
+        <name>do_out</name>
+        <param>
+          <type><ref refid="structboost_1_1unicode_1_1utf__mbstate" kindref="compound">utf_mbstate</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const codepoint *</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const codepoint *</type>
+          <declname>from_end</declname>
+        </param>
+        <param>
+          <type>const codepoint *&amp;</type>
+          <declname>from_next</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>to_end</declname>
+        </param>
+        <param>
+          <type>char *&amp;</type>
+          <declname>to_next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1unicode_1_1utf32be__codecvt_1b3" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>virtual int</type>
+        <definition>virtual int boost::unicode::utf32be_codecvt::do_length</definition>
+        <argsstring>(const utf_mbstate &amp;, const char *from, const char *from_end, std::size_t max) const </argsstring>
+        <name>do_length</name>
+        <param>
+          <type>const <ref refid="structboost_1_1unicode_1_1utf__mbstate" kindref="compound">utf_mbstate</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>from_end</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="295"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1unicode_1_1utf32be__codecvt_1b4" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>virtual int</type>
+        <definition>virtual int boost::unicode::utf32be_codecvt::do_max_length</definition>
+        <argsstring>() const </argsstring>
+        <name>do_max_length</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="298" bodystart="298" bodyend="300"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A codecvt facet that can be used to read and write UTF-32 encoded files. This is a fairly trivial codecvt facet. The only thing it does is swap bytes iff necessary. The codepoints have Unicode scalar values, which are in the range 0x0..0xd7ff, 0xe000..0x10ffff. </para>    </detaileddescription>
+    <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/codecvt.hpp" line="269" bodystart="267" bodyend="301"/>
+    <listofallmembers>
+      <member refid="classboost_1_1unicode_1_1utf32be__codecvt_1b0" prot="protected" virt="virtual"><scope>boost::unicode::utf32be_codecvt</scope><name>do_encoding</name></member>
+      <member refid="classboost_1_1unicode_1_1utf32be__codecvt_1b1" prot="protected" virt="virtual"><scope>boost::unicode::utf32be_codecvt</scope><name>do_in</name></member>
+      <member refid="classboost_1_1unicode_1_1utf32be__codecvt_1b3" prot="protected" virt="virtual"><scope>boost::unicode::utf32be_codecvt</scope><name>do_length</name></member>
+      <member refid="classboost_1_1unicode_1_1utf32be__codecvt_1b4" prot="protected" virt="virtual"><scope>boost::unicode::utf32be_codecvt</scope><name>do_max_length</name></member>
+      <member refid="classboost_1_1unicode_1_1utf32be__codecvt_1b2" prot="protected" virt="virtual"><scope>boost::unicode::utf32be_codecvt</scope><name>do_out</name></member>
+      <member refid="classboost_1_1unicode_1_1utf32be__codecvt_1w1" prot="public" virt="non-virtual"><scope>boost::unicode::utf32be_codecvt</scope><name>extern_type</name></member>
+      <member refid="classboost_1_1unicode_1_1utf32be__codecvt_1w0" prot="public" virt="non-virtual"><scope>boost::unicode::utf32be_codecvt</scope><name>intern_type</name></member>
+      <member refid="classboost_1_1unicode_1_1utf32be__codecvt_1a0" prot="public" virt="non-virtual"><scope>boost::unicode::utf32be_codecvt</scope><name>utf32be_codecvt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

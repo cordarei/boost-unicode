@@ -1,0 +1,65 @@
+# Build information for the Unicode library.
+# Though this file is under the Boost license, it is NOT (or not yet) part of
+# Boost!
+
+# Copyright Graham Barnett, Rogier van Dalen 2005.
+# Use, modification, and distribution are subject to the Boost Software
+# License, Version 1.0. (See accompanying file LICENSE_1_0.txt or copy at
+# http://www.boost.org/LICENSE_1_0.txt)
+
+# For more information, see http://www.boost.org
+
+# declare the location of this subproject relative to the root
+subproject libs/unicode/build ;
+
+#
+# This template defines the options common to all Unicode builds and tests:
+#
+template unicode-options
+   : # sources
+   : # requirements
+     <sysinclude>$(BOOST_ROOT)
+   ;
+
+SOURCES =
+	../src/uni_character_properties
+	../src/utf/utf8_data
+	../src/utf/utf8_codecvt
+	../src/utf/utf16_codecvt
+	../src/utf/utf32_codecvt
+	../src/utf/use_byte_order_mark
+	;
+
+lib boost_unicode :
+	./$(SOURCES).cpp
+	<template>unicode-options
+    :
+        [ common-names ]
+    : 
+        debug release
+    ;
+
+
+dll boost_unicode_ucd :
+	../src/interface_impl/uni_impl_interface.cpp
+	../src/ucd/uni_ucd_interface_impl_data.cpp
+	<template>unicode-options
+    : 
+       [ common-names ]
+    : 
+        debug release
+    ;
+    
+stage stage/lib : <lib>boost_unicode <dll>boost_unicode_ucd
+    :
+        <locate>$(BOOST_ROOT)
+        [ common-names ]
+        <target>stage
+        <target>all
+    :
+        debug release
+    ;
+
+install unicode lib
+    : <dll>boost_unicode_ucd <lib>boost_unicode
+    ;

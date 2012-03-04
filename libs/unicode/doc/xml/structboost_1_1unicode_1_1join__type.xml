@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.0">
+  <compounddef id="structboost_1_1unicode_1_1join__type" kind="struct" prot="public">
+    <compoundname>boost::unicode::join_type</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structboost_1_1unicode_1_1join__type_1w7" prot="public" static="no">
+        <name>type</name>
+        <enumvalue id="structboost_1_1unicode_1_1join__type_1w7w0" prot="public">
+          <name>none</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1join__type_1w7w1" prot="public">
+          <name>right</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1join__type_1w7w2" prot="public">
+          <name>left</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1join__type_1w7w3" prot="public">
+          <name>dual</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1join__type_1w7w4" prot="public">
+          <name>causing</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1join__type_1w7w5" prot="public">
+          <name>transparent</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structboost_1_1unicode_1_1join__type_1w7w6" prot="public">
+          <name>__count</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="73" bodystart="72" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="71" bodystart="70" bodyend="82"/>
+    <listofallmembers>
+      <member refid="structboost_1_1unicode_1_1join__type_1w7w6" prot="public" virt="non-virtual"><scope>boost::unicode::join_type</scope><name>__count</name></member>
+      <member refid="structboost_1_1unicode_1_1join__type_1w7w4" prot="public" virt="non-virtual"><scope>boost::unicode::join_type</scope><name>causing</name></member>
+      <member refid="structboost_1_1unicode_1_1join__type_1w7w3" prot="public" virt="non-virtual"><scope>boost::unicode::join_type</scope><name>dual</name></member>
+      <member refid="structboost_1_1unicode_1_1join__type_1w7w2" prot="public" virt="non-virtual"><scope>boost::unicode::join_type</scope><name>left</name></member>
+      <member refid="structboost_1_1unicode_1_1join__type_1w7w0" prot="public" virt="non-virtual"><scope>boost::unicode::join_type</scope><name>none</name></member>
+      <member refid="structboost_1_1unicode_1_1join__type_1w7w1" prot="public" virt="non-virtual"><scope>boost::unicode::join_type</scope><name>right</name></member>
+      <member refid="structboost_1_1unicode_1_1join__type_1w7w5" prot="public" virt="non-virtual"><scope>boost::unicode::join_type</scope><name>transparent</name></member>
+      <member refid="structboost_1_1unicode_1_1join__type_1w7" prot="public" virt="non-virtual"><scope>boost::unicode::join_type</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

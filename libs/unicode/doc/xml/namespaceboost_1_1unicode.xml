@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.0">
+  <compounddef id="namespaceboost_1_1unicode" kind="namespace">
+    <compoundname>boost::unicode</compoundname>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceboost_1_1unicode_1a0" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t boost::unicode::char8_t</definition>
+        <argsstring></argsstring>
+        <name>char8_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp" line="20" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceboost_1_1unicode_1a1" prot="public" static="no">
+        <type>uint16_t</type>
+        <definition>typedef uint16_t boost::unicode::char16_t</definition>
+        <argsstring></argsstring>
+        <name>char16_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp" line="21" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceboost_1_1unicode_1a2" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t boost::unicode::char32_t</definition>
+        <argsstring></argsstring>
+        <name>char32_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp" line="22" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceboost_1_1unicode_1a3" prot="public" static="no">
+        <type>char32_t</type>
+        <definition>typedef char32_t boost::unicode::codepoint</definition>
+        <argsstring></argsstring>
+        <name>codepoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp" line="23" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceboost_1_1unicode_1a8" prot="public" static="no">
+        <type>std::basic_fstream&lt; codepoint, char_traits&lt; codepoint &gt; &gt;</type>
+        <definition>typedef std::basic_fstream&lt;codepoint, char_traits &lt;codepoint&gt; &gt; boost::unicode::fstream</definition>
+        <argsstring></argsstring>
+        <name>fstream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/fstream.hpp" line="24" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceboost_1_1unicode_1a9" prot="public" static="no">
+        <type>std::basic_ifstream&lt; codepoint, char_traits&lt; codepoint &gt; &gt;</type>
+        <definition>typedef std::basic_ifstream&lt;codepoint, char_traits &lt;codepoint&gt; &gt; boost::unicode::ifstream</definition>
+        <argsstring></argsstring>
+        <name>ifstream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/fstream.hpp" line="26" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceboost_1_1unicode_1a10" prot="public" static="no">
+        <type>std::basic_ofstream&lt; codepoint, char_traits&lt; codepoint &gt; &gt;</type>
+        <definition>typedef std::basic_ofstream&lt;codepoint, char_traits &lt;codepoint&gt; &gt; boost::unicode::ofstream</definition>
+        <argsstring></argsstring>
+        <name>ofstream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/fstream.hpp" line="28" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceboost_1_1unicode_1a11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string as_string</definition>
+        <argsstring>(category::type)</argsstring>
+        <name>as_string</name>
+        <param>
+          <type>category::type</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1unicode_1a12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string as_string</definition>
+        <argsstring>(join_type::type)</argsstring>
+        <name>as_string</name>
+        <param>
+          <type>join_type::type</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1unicode_1a13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string as_string</definition>
+        <argsstring>(bidi_class::type)</argsstring>
+        <name>as_string</name>
+        <param>
+          <type>bidi_class::type</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="116"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1unicode_1a14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string as_string</definition>
+        <argsstring>(break_class::type)</argsstring>
+        <name>as_string</name>
+        <param>
+          <type>break_class::type</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="162"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1unicode_1a15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string as_string</definition>
+        <argsstring>(break_action::type)</argsstring>
+        <name>as_string</name>
+        <param>
+          <type>break_action::type</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="178"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1unicode_1a16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string as_string</definition>
+        <argsstring>(decomposition_type::type)</argsstring>
+        <name>as_string</name>
+        <param>
+          <type>decomposition_type::type</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="206"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1unicode_1a17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string as_string</definition>
+        <argsstring>(grapheme_cluster_break::type)</argsstring>
+        <name>as_string</name>
+        <param>
+          <type>grapheme_cluster_break::type</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="227"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1unicode_1a18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string as_string</definition>
+        <argsstring>(word_boundary::type)</argsstring>
+        <name>as_string</name>
+        <param>
+          <type>word_boundary::type</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="245"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1unicode_1a19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string as_string</definition>
+        <argsstring>(sentence_boundary::type)</argsstring>
+        <name>as_string</name>
+        <param>
+          <type>sentence_boundary::type</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_properties.hpp" line="266"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceboost_1_1unicode_1a20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void use_byte_order_mark</definition>
+        <argsstring>(std::basic_istream&lt; codepoint, char_traits&lt; codepoint &gt; &gt; &amp;)</argsstring>
+        <name>use_byte_order_mark</name>
+        <param>
+          <type>std::basic_istream&lt; codepoint, char_traits&lt; codepoint &gt; &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extract any byte order mark from the input stream and imbue the corresponding UTF codecvt facet. This is useful if the Unicode encoding of a file is not known.</para><para>The position of the get pointer is placed after the byte order mark. If no byte order mark is found, a UTF-8 codecvt facet is imbued and the get pointer is reset. This behaviour is according to the Unicode standard, which discourages use of the byte order mark for UTF-8 files, and the XML standard, which allows but does not enforce the byte order mark.</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/fstream.hpp" line="43"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceboost_1_1unicode_1a4" prot="public" static="yes" volatile="no" mutable="no">
+        <type>static const codepoint</type>
+        <definition>const codepoint boost::unicode::replacement_character</definition>
+        <argsstring></argsstring>
+        <name>replacement_character</name>
+        <initializer> 0x0000fffd</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp" line="29" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceboost_1_1unicode_1a5" prot="public" static="yes" volatile="no" mutable="no">
+        <type>static const codepoint</type>
+        <definition>const codepoint boost::unicode::max_bmp</definition>
+        <argsstring></argsstring>
+        <name>max_bmp</name>
+        <initializer> 0x0000ffff</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp" line="30" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceboost_1_1unicode_1a6" prot="public" static="yes" volatile="no" mutable="no">
+        <type>static const codepoint</type>
+        <definition>const codepoint boost::unicode::max_codepoint</definition>
+        <argsstring></argsstring>
+        <name>max_codepoint</name>
+        <initializer> 0x0010ffff</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp" line="31" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceboost_1_1unicode_1a7" prot="public" static="yes" volatile="no" mutable="no">
+        <type>static const codepoint</type>
+        <definition>const codepoint boost::unicode::byte_order_mark</definition>
+        <argsstring></argsstring>
+        <name>byte_order_mark</name>
+        <initializer> 0xfeff</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/character_types.hpp" line="32" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/uni_character_interface.hpp" line="29"/>
+  </compounddef>
+</doxygen>

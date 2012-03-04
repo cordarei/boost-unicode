@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.4.0">
+  <compound refid="structboost_1_1unicode_1_1bidi__class" kind="struct"><name>boost::unicode::bidi_class</name>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20" kind="enum"><name>type</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w0" kind="enumvalue"><name>strong_left_to_right</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w1" kind="enumvalue"><name>strong_left_to_right_embedding</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w2" kind="enumvalue"><name>strong_left_to_right_override</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w3" kind="enumvalue"><name>strong_right_to_left</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w4" kind="enumvalue"><name>strong_right_to_left_arabic</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w5" kind="enumvalue"><name>strong_right_to_left_embedding</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w6" kind="enumvalue"><name>strong_right_to_left_override</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w7" kind="enumvalue"><name>weak_pop_direction_format</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w8" kind="enumvalue"><name>weak_european_digits</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w9" kind="enumvalue"><name>weak_european_number_separator</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w10" kind="enumvalue"><name>weak_european_number_terminator</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w11" kind="enumvalue"><name>weak_arabic_number</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w12" kind="enumvalue"><name>weak_common_number_separator</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w13" kind="enumvalue"><name>weak_non_spacing_mark</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w14" kind="enumvalue"><name>weak_boundary_neutral</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w15" kind="enumvalue"><name>neutral_paragraph_separator</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w16" kind="enumvalue"><name>neutral_segment_separator</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w17" kind="enumvalue"><name>neutral_whitespace</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w18" kind="enumvalue"><name>neutral_other</name></member>
+    <member refid="structboost_1_1unicode_1_1bidi__class_1w20w19" kind="enumvalue"><name>__count</name></member>
+  </compound>
+  <compound refid="structboost_1_1unicode_1_1break__action" kind="struct"><name>boost::unicode::break_action</name>
+    <member refid="structboost_1_1unicode_1_1break__action_1w7" kind="enum"><name>type</name></member>
+    <member refid="structboost_1_1unicode_1_1break__action_1w7w0" kind="enumvalue"><name>direct</name></member>
+    <member refid="structboost_1_1unicode_1_1break__action_1w7w1" kind="enumvalue"><name>indirect</name></member>
+    <member refid="structboost_1_1unicode_1_1break__action_1w7w2" kind="enumvalue"><name>combining_indirect</name></member>
+    <member refid="structboost_1_1unicode_1_1break__action_1w7w3" kind="enumvalue"><name>combining_prohibited</name></member>
+    <member refid="structboost_1_1unicode_1_1break__action_1w7w4" kind="enumvalue"><name>prohibited</name></member>
+    <member refid="structboost_1_1unicode_1_1break__action_1w7w5" kind="enumvalue"><name>always</name></member>
+    <member refid="structboost_1_1unicode_1_1break__action_1w7w6" kind="enumvalue"><name>__count</name></member>
+  </compound>
+  <compound refid="structboost_1_1unicode_1_1break__class" kind="struct"><name>boost::unicode::break_class</name>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37" kind="enum"><name>type</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w0" kind="enumvalue"><name>mandatory</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w1" kind="enumvalue"><name>carriage_return</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w2" kind="enumvalue"><name>line_feed</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w3" kind="enumvalue"><name>combining_mark</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w4" kind="enumvalue"><name>next_line</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w5" kind="enumvalue"><name>surrogate</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w6" kind="enumvalue"><name>word_joiner</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w7" kind="enumvalue"><name>zero_width_space</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w8" kind="enumvalue"><name>non_breaking</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w9" kind="enumvalue"><name>contingent_break_opportunity</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w10" kind="enumvalue"><name>space</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w11" kind="enumvalue"><name>break_opportunity_before_after</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w12" kind="enumvalue"><name>break_opportunity_after</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w13" kind="enumvalue"><name>break_opportunity_before</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w14" kind="enumvalue"><name>hyphen</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w15" kind="enumvalue"><name>closing_punctuation</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w16" kind="enumvalue"><name>exclamation_interrogation</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w17" kind="enumvalue"><name>inseparable</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w18" kind="enumvalue"><name>non_starter</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w19" kind="enumvalue"><name>opening_punctuation</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w20" kind="enumvalue"><name>ambiguous_quotation</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w21" kind="enumvalue"><name>infix_separator</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w22" kind="enumvalue"><name>numeric</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w23" kind="enumvalue"><name>postfix_numeric</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w24" kind="enumvalue"><name>prefix_numeric</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w25" kind="enumvalue"><name>symbol_allowing_break</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w26" kind="enumvalue"><name>ambiguous</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w27" kind="enumvalue"><name>ordinary_alpabetic_or_symbol_character</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w28" kind="enumvalue"><name>hangul_lv_syllable</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w29" kind="enumvalue"><name>hangul_lvt_syllable</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w30" kind="enumvalue"><name>ideograph</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w31" kind="enumvalue"><name>hangul_l_jamo</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w32" kind="enumvalue"><name>hangul_v_jamo</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w33" kind="enumvalue"><name>hangul_t_jamo</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w34" kind="enumvalue"><name>complex_context</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w35" kind="enumvalue"><name>unknown</name></member>
+    <member refid="structboost_1_1unicode_1_1break__class_1w37w36" kind="enumvalue"><name>__count</name></member>
+  </compound>
+  <compound refid="structboost_1_1unicode_1_1category" kind="struct"><name>boost::unicode::category</name>
+    <member refid="structboost_1_1unicode_1_1category_1w32" kind="enum"><name>type</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w0" kind="enumvalue"><name>letter_uppercase</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w1" kind="enumvalue"><name>letter_lowercase</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w2" kind="enumvalue"><name>letter_titlecase</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w3" kind="enumvalue"><name>letter_modifier</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w4" kind="enumvalue"><name>letter_other</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w5" kind="enumvalue"><name>mark_nonspacing</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w6" kind="enumvalue"><name>mark_spacing_combining</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w7" kind="enumvalue"><name>mark_enclosing</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w8" kind="enumvalue"><name>number_decimal_digit</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w9" kind="enumvalue"><name>number_letter</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w10" kind="enumvalue"><name>number_other</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w11" kind="enumvalue"><name>punctuation_connector</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w12" kind="enumvalue"><name>punctuation_dash</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w13" kind="enumvalue"><name>punctuation_open</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w14" kind="enumvalue"><name>punctuation_close</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w15" kind="enumvalue"><name>punctuation_initial_quote</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w16" kind="enumvalue"><name>punctuation_final_quote</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w17" kind="enumvalue"><name>punctuation_other</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w18" kind="enumvalue"><name>symbol_math</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w19" kind="enumvalue"><name>symbol_currency</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w20" kind="enumvalue"><name>symbol_modifier</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w21" kind="enumvalue"><name>symbol_other</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w22" kind="enumvalue"><name>separator_space</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w23" kind="enumvalue"><name>separator_line</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w24" kind="enumvalue"><name>separator_paragraph</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w25" kind="enumvalue"><name>other_control</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w26" kind="enumvalue"><name>other_format</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w27" kind="enumvalue"><name>other_surrogate</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w28" kind="enumvalue"><name>other_private_use</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w29" kind="enumvalue"><name>other_not_assigned</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w30" kind="enumvalue"><name>unknown</name></member>
+    <member refid="structboost_1_1unicode_1_1category_1w32w31" kind="enumvalue"><name>__count</name></member>
+  </compound>
+  <compound refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4" kind="class"><name>std::codecvt&lt; InternT, ExternT, boost::unicode::utf_mbstate &gt;</name>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1w0" kind="typedef"><name>intern_type</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1w1" kind="typedef"><name>extern_type</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1w2" kind="typedef"><name>result</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1w3" kind="typedef"><name>state_type</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a0" kind="function"><name>out</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a1" kind="function"><name>unshift</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a2" kind="function"><name>in</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a3" kind="function"><name>encoding</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a4" kind="function"><name>always_noconv</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a5" kind="function"><name>length</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1a6" kind="function"><name>max_length</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1s0" kind="variable"><name>id</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b0" kind="function"><name>codecvt</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b1" kind="function"><name>~codecvt</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b2" kind="function"><name>do_out</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b3" kind="function"><name>do_in</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b4" kind="function"><name>do_length</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b5" kind="function"><name>do_encoding</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b6" kind="function"><name>do_always_noconv</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b7" kind="function"><name>do_unshift</name></member>
+    <member refid="classstd_1_1codecvt_3_01InternT_00_01ExternT_00_01boost_1_1unicode_1_1utf__mbstate_01_4_1b8" kind="function"><name>do_max_length</name></member>
+  </compound>
+  <compound refid="structboost_1_1unicode_1_1ucd_1_1compare__level" kind="struct"><name>boost::unicode::ucd::compare_level</name>
+    <member refid="structboost_1_1unicode_1_1ucd_1_1compare__level_1w5" kind="enum"><name>type</name></member>
+    <member refid="structboost_1_1unicode_1_1ucd_1_1compare__level_1w5w0" kind="enumvalue"><name>Insensitive</name></member>
+    <member refid="structboost_1_1unicode_1_1ucd_1_1compare__level_1w5w1" kind="enumvalue"><name>Accents</name></member>
+    <member refid="structboost_1_1unicode_1_1ucd_1_1compare__level_1w5w2" kind="enumvalue"><name>CaseAccents</name></member>
+    <member refid="structboost_1_1unicode_1_1ucd_1_1compare__level_1w5w3" kind="enumvalue"><name>CaseAccentsPunctuation</name></member>
+    <member refid="structboost_1_1unicode_1_1ucd_1_1compare__level_1w5w4" kind="enumvalue"><name>Full</name></member>
+  </compound>
+  <compound refid="structboost_1_1unicode_1_1decomposition__type" kind="struct"><name>boost::unicode::decomposition_type</name>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19" kind="enum"><name>type</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w0" kind="enumvalue"><name>font</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w1" kind="enumvalue"><name>no_break</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w2" kind="enumvalue"><name>initial</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w3" kind="enumvalue"><name>medial</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w4" kind="enumvalue"><name>final</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w5" kind="enumvalue"><name>isolated</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w6" kind="enumvalue"><name>circle</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w7" kind="enumvalue"><name>super</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w8" kind="enumvalue"><name>sub</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w9" kind="enumvalue"><name>vertical</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w10" kind="enumvalue"><name>wide</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w11" kind="enumvalue"><name>narrow</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w12" kind="enumvalue"><name>small</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w13" kind="enumvalue"><name>square</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w14" kind="enumvalue"><name>fraction</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w15" kind="enumvalue"><name>compat</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w16" kind="enumvalue"><name>canonical</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w17" kind="enumvalue"><name>none</name></member>
+    <member refid="structboost_1_1unicode_1_1decomposition__type_1w19w18" kind="enumvalue"><name>__count</name></member>
+  </compound>
+  <compound refid="structboost_1_1unicode_1_1detect__tag" kind="struct"><name>boost::unicode::detect_tag</name>
+  </compound>
+  <compound refid="structboost_1_1unicode_1_1grapheme__cluster__break" kind="struct"><name>boost::unicode::grapheme_cluster_break</name>
+    <member refid="structboost_1_1unicode_1_1grapheme__cluster__break_1w11" kind="enum"><name>type</name></member>
+    <member refid="structboost_1_1unicode_1_1grapheme__cluster__break_1w11w0" kind="enumvalue"><name>cr</name></member>
+    <member refid="structboost_1_1unicode_1_1grapheme__cluster__break_1w11w1" kind="enumvalue"><name>lf</name></member>
+    <member refid="structboost_1_1unicode_1_1grapheme__cluster__break_1w11w2" kind="enumvalue"><name>control</name></member>
+    <member refid="structboost_1_1unicode_1_1grapheme__cluster__break_1w11w3" kind="enumvalue"><name>l</name></member>
+    <member refid="structboost_1_1unicode_1_1grapheme__cluster__break_1w11w4" kind="enumvalue"><name>v</name></member>
+    <member refid="structboost_1_1unicode_1_1grapheme__cluster__break_1w11w5" kind="enumvalue"><name>t</name></member>
+    <member refid="structboost_1_1unicode_1_1grapheme__cluster__break_1w11w6" kind="enumvalue"><name>lv</name></member>
+    <member refid="structboost_1_1unicode_1_1grapheme__cluster__break_1w11w7" kind="enumvalue"><name>lvt</name></member>
+    <member refid="structboost_1_1unicode_1_1grapheme__cluster__break_1w11w8" kind="enumvalue"><name>extend</name></member>
+    <member refid="structboost_1_1unicode_1_1grapheme__cluster__break_1w11w9" kind="enumvalue"><name>other</name></member>
+    <member refid="structboost_1_1unicode_1_1grapheme__cluster__break_1w11w10" kind="enumvalue"><name>__count</name></member>
+  </compound>
+  <compound refid="structboost_1_1unicode_1_1join__type" kind="struct"><name>boost::unicode::join_type</name>
+    <member refid="structboost_1_1unicode_1_1join__type_1w7" kind="enum"><name>type</name></member>
+    <member refid="structboost_1_1unicode_1_1join__type_1w7w0" kind="enumvalue"><name>none</name></member>
+    <member refid="structboost_1_1unicode_1_1join__type_1w7w1" kind="enumvalue"><name>right</name></member>
+    <member refid="structboost_1_1unicode_1_1join__type_1w7w2" kind="enumvalue"><name>left</name></member>
+    <member refid="structboost_1_1unicode_1_1join__type_1w7w3" kind="enumvalue"><name>dual</name></member>
+    <member refid="structboost_1_1unicode_1_1join__type_1w7w4" kind="enumvalue"><name>causing</name></member>
+    <member refid="structboost_1_1unicode_1_1join__type_1w7w5" kind="enumvalue"><name>transparent</name></member>
+    <member refid="structboost_1_1unicode_1_1join__type_1w7w6" kind="enumvalue"><name>__count</name></member>
+  </compound>
+  <compound refid="structboost_1_1unicode_1_1sentence__boundary" kind="struct"><name>boost::unicode::sentence_boundary</name>
+    <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12" kind="enum"><name>type</name></member>
+    <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w0" kind="enumvalue"><name>sep</name></member>
+    <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w1" kind="enumvalue"><name>format</name></member>
+    <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w2" kind="enumvalue"><name>sp</name></member>
+    <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w3" kind="enumvalue"><name>lower</name></member>
+    <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w4" kind="enumvalue"><name>upper</name></member>
+    <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w5" kind="enumvalue"><name>oletter</name></member>
+    <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w6" kind="enumvalue"><name>numeric</name></member>
+    <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w7" kind="enumvalue"><name>aterm</name></member>
+    <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w8" kind="enumvalue"><name>sterm</name></member>
+    <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w9" kind="enumvalue"><name>close</name></member>
+    <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w10" kind="enumvalue"><name>any</name></member>
+    <member refid="structboost_1_1unicode_1_1sentence__boundary_1w12w11" kind="enumvalue"><name>__count</name></member>
+  </compound>
+  <compound refid="classboost_1_1unicode_1_1ucd_1_1unichar__properties__interface__v1" kind="class"><name>boost::unicode::ucd::unichar_properties_interface_v1</name>
+  </compound>
+  <compound refid="structboost_1_1unicode_1_1utf16__tag" kind="struct"><name>boost::unicode::utf16_tag</name>
+  </compound>
+  <compound refid="classboost_1_1unicode_1_1utf16be__codecvt" kind="class"><name>boost::unicode::utf16be_codecvt</name>
+    <member refid="classboost_1_1unicode_1_1utf16be__codecvt_1w0" kind="typedef"><name>intern_type</name></member>
+    <member refid="classboost_1_1unicode_1_1utf16be__codecvt_1w1" kind="typedef"><name>extern_type</name></member>
+    <member refid="classboost_1_1unicode_1_1utf16be__codecvt_1a0" kind="function"><name>utf16be_codecvt</name></member>
+    <member refid="classboost_1_1unicode_1_1utf16be__codecvt_1b0" kind="function"><name>do_in</name></member>
+    <member refid="classboost_1_1unicode_1_1utf16be__codecvt_1b1" kind="function"><name>do_out</name></member>
+    <member refid="classboost_1_1unicode_1_1utf16be__codecvt_1b2" kind="function"><name>do_length</name></member>
+    <member refid="classboost_1_1unicode_1_1utf16be__codecvt_1b3" kind="function"><name>do_max_length</name></member>
+  </compound>
+  <compound refid="structboost_1_1unicode_1_1utf16be__tag" kind="struct"><name>boost::unicode::utf16be_tag</name>
+  </compound>
+  <compound refid="classboost_1_1unicode_1_1utf16le__codecvt" kind="class"><name>boost::unicode::utf16le_codecvt</name>
+    <member refid="classboost_1_1unicode_1_1utf16le__codecvt_1w0" kind="typedef"><name>intern_type</name></member>
+    <member refid="classboost_1_1unicode_1_1utf16le__codecvt_1w1" kind="typedef"><name>extern_type</name></member>
+    <member refid="classboost_1_1unicode_1_1utf16le__codecvt_1a0" kind="function"><name>utf16le_codecvt</name></member>
+    <member refid="classboost_1_1unicode_1_1utf16le__codecvt_1b0" kind="function"><name>do_in</name></member>
+    <member refid="classboost_1_1unicode_1_1utf16le__codecvt_1b1" kind="function"><name>do_out</name></member>
+    <member refid="classboost_1_1unicode_1_1utf16le__codecvt_1b2" kind="function"><name>do_length</name></member>
+    <member refid="classboost_1_1unicode_1_1utf16le__codecvt_1b3" kind="function"><name>do_max_length</name></member>
+  </compound>
+  <compound refid="structboost_1_1unicode_1_1utf16le__tag" kind="struct"><name>boost::unicode::utf16le_tag</name>
+  </compound>
+  <compound refid="structboost_1_1unicode_1_1utf32__tag" kind="struct"><name>boost::unicode::utf32_tag</name>
+  </compound>
+  <compound refid="classboost_1_1unicode_1_1utf32be__codecvt" kind="class"><name>boost::unicode::utf32be_codecvt</name>
+    <member refid="classboost_1_1unicode_1_1utf32be__codecvt_1w0" kind="typedef"><name>intern_type</name></member>
+    <member refid="classboost_1_1unicode_1_1utf32be__codecvt_1w1" kind="typedef"><name>extern_type</name></member>
+    <member refid="classboost_1_1unicode_1_1utf32be__codecvt_1a0" kind="function"><name>utf32be_codecvt</name></member>
+    <member refid="classboost_1_1unicode_1_1utf32be__codecvt_1b0" kind="function"><name>do_encoding</name></member>
+    <member refid="classboost_1_1unicode_1_1utf32be__codecvt_1b1" kind="function"><name>do_in</name></member>
+    <member refid="classboost_1_1unicode_1_1utf32be__codecvt_1b2" kind="function"><name>do_out</name></member>
+    <member refid="classboost_1_1unicode_1_1utf32be__codecvt_1b3" kind="function"><name>do_length</name></member>
+    <member refid="classboost_1_1unicode_1_1utf32be__codecvt_1b4" kind="function"><name>do_max_length</name></member>
+  </compound>
+  <compound refid="structboost_1_1unicode_1_1utf32be__tag" kind="struct"><name>boost::unicode::utf32be_tag</name>
+  </compound>
+  <compound refid="classboost_1_1unicode_1_1utf32le__codecvt" kind="class"><name>boost::unicode::utf32le_codecvt</name>
+    <member refid="classboost_1_1unicode_1_1utf32le__codecvt_1w0" kind="typedef"><name>intern_type</name></member>
+    <member refid="classboost_1_1unicode_1_1utf32le__codecvt_1w1" kind="typedef"><name>extern_type</name></member>
+    <member refid="classboost_1_1unicode_1_1utf32le__codecvt_1a0" kind="function"><name>utf32le_codecvt</name></member>
+    <member refid="classboost_1_1unicode_1_1utf32le__codecvt_1b0" kind="function"><name>do_encoding</name></member>
+    <member refid="classboost_1_1unicode_1_1utf32le__codecvt_1b1" kind="function"><name>do_in</name></member>
+    <member refid="classboost_1_1unicode_1_1utf32le__codecvt_1b2" kind="function"><name>do_out</name></member>
+    <member refid="classboost_1_1unicode_1_1utf32le__codecvt_1b3" kind="function"><name>do_length</name></member>
+    <member refid="classboost_1_1unicode_1_1utf32le__codecvt_1b4" kind="function"><name>do_max_length</name></member>
+  </compound>
+  <compound refid="structboost_1_1unicode_1_1utf32le__tag" kind="struct"><name>boost::unicode::utf32le_tag</name>
+  </compound>
+  <compound refid="classboost_1_1unicode_1_1utf8__codecvt" kind="class"><name>boost::unicode::utf8_codecvt</name>
+    <member refid="classboost_1_1unicode_1_1utf8__codecvt_1w0" kind="typedef"><name>intern_type</name></member>
+    <member refid="classboost_1_1unicode_1_1utf8__codecvt_1w1" kind="typedef"><name>extern_type</name></member>
+    <member refid="classboost_1_1unicode_1_1utf8__codecvt_1a0" kind="function"><name>utf8_codecvt</name></member>
+    <member refid="classboost_1_1unicode_1_1utf8__codecvt_1b0" kind="function"><name>do_in</name></member>
+    <member refid="classboost_1_1unicode_1_1utf8__codecvt_1b1" kind="function"><name>do_out</name></member>
+    <member refid="classboost_1_1unicode_1_1utf8__codecvt_1b2" kind="function"><name>do_length</name></member>
+    <member refid="classboost_1_1unicode_1_1utf8__codecvt_1b3" kind="function"><name>do_max_length</name></member>
+  </compound>
+  <compound refid="structboost_1_1unicode_1_1utf8__tag" kind="struct"><name>boost::unicode::utf8_tag</name>
+  </compound>
+  <compound refid="structboost_1_1unicode_1_1utf__mbstate" kind="struct"><name>boost::unicode::utf_mbstate</name>
+  </compound>
+  <compound refid="structboost_1_1unicode_1_1word__boundary" kind="struct"><name>boost::unicode::word_boundary</name>
+    <member refid="structboost_1_1unicode_1_1word__boundary_1w9" kind="enum"><name>type</name></member>
+    <member refid="structboost_1_1unicode_1_1word__boundary_1w9w0" kind="enumvalue"><name>format</name></member>
+    <member refid="structboost_1_1unicode_1_1word__boundary_1w9w1" kind="enumvalue"><name>katakana</name></member>
+    <member refid="structboost_1_1unicode_1_1word__boundary_1w9w2" kind="enumvalue"><name>aletter</name></member>
+    <member refid="structboost_1_1unicode_1_1word__boundary_1w9w3" kind="enumvalue"><name>midletter</name></member>
+    <member refid="structboost_1_1unicode_1_1word__boundary_1w9w4" kind="enumvalue"><name>midnum</name></member>
+    <member refid="structboost_1_1unicode_1_1word__boundary_1w9w5" kind="enumvalue"><name>numeric</name></member>
+    <member refid="structboost_1_1unicode_1_1word__boundary_1w9w6" kind="enumvalue"><name>extendnumlet</name></member>
+    <member refid="structboost_1_1unicode_1_1word__boundary_1w9w7" kind="enumvalue"><name>any</name></member>
+    <member refid="structboost_1_1unicode_1_1word__boundary_1w9w8" kind="enumvalue"><name>__count</name></member>
+  </compound>
+  <compound refid="namespaceboost" kind="namespace"><name>boost</name>
+  </compound>
+  <compound refid="namespaceboost_1_1unicode" kind="namespace"><name>boost::unicode</name>
+    <member refid="namespaceboost_1_1unicode_1a0" kind="typedef"><name>char8_t</name></member>
+    <member refid="namespaceboost_1_1unicode_1a1" kind="typedef"><name>char16_t</name></member>
+    <member refid="namespaceboost_1_1unicode_1a2" kind="typedef"><name>char32_t</name></member>
+    <member refid="namespaceboost_1_1unicode_1a3" kind="typedef"><name>codepoint</name></member>
+    <member refid="namespaceboost_1_1unicode_1a8" kind="typedef"><name>fstream</name></member>
+    <member refid="namespaceboost_1_1unicode_1a9" kind="typedef"><name>ifstream</name></member>
+    <member refid="namespaceboost_1_1unicode_1a10" kind="typedef"><name>ofstream</name></member>
+    <member refid="namespaceboost_1_1unicode_1a11" kind="function"><name>as_string</name></member>
+    <member refid="namespaceboost_1_1unicode_1a12" kind="function"><name>as_string</name></member>
+    <member refid="namespaceboost_1_1unicode_1a13" kind="function"><name>as_string</name></member>
+    <member refid="namespaceboost_1_1unicode_1a14" kind="function"><name>as_string</name></member>
+    <member refid="namespaceboost_1_1unicode_1a15" kind="function"><name>as_string</name></member>
+    <member refid="namespaceboost_1_1unicode_1a16" kind="function"><name>as_string</name></member>
+    <member refid="namespaceboost_1_1unicode_1a17" kind="function"><name>as_string</name></member>
+    <member refid="namespaceboost_1_1unicode_1a18" kind="function"><name>as_string</name></member>
+    <member refid="namespaceboost_1_1unicode_1a19" kind="function"><name>as_string</name></member>
+    <member refid="namespaceboost_1_1unicode_1a20" kind="function"><name>use_byte_order_mark</name></member>
+    <member refid="namespaceboost_1_1unicode_1a4" kind="variable"><name>replacement_character</name></member>
+    <member refid="namespaceboost_1_1unicode_1a5" kind="variable"><name>max_bmp</name></member>
+    <member refid="namespaceboost_1_1unicode_1a6" kind="variable"><name>max_codepoint</name></member>
+    <member refid="namespaceboost_1_1unicode_1a7" kind="variable"><name>byte_order_mark</name></member>
+  </compound>
+  <compound refid="namespaceboost_1_1unicode_1_1ucd" kind="namespace"><name>boost::unicode::ucd</name>
+    <member refid="namespaceboost_1_1unicode_1_1ucd_1a2" kind="function"><name>is_grapheme_break</name></member>
+    <member refid="namespaceboost_1_1unicode_1_1ucd_1a3" kind="function"><name>find_complex_line_break</name></member>
+    <member refid="namespaceboost_1_1unicode_1_1ucd_1a4" kind="function"><name>get_line_breaks</name></member>
+    <member refid="namespaceboost_1_1unicode_1_1ucd_1a0" kind="variable"><name>g_tbl_grapheme_lookup</name></member>
+    <member refid="namespaceboost_1_1unicode_1_1ucd_1a1" kind="variable"><name>tbl_break_pairs</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="character__types_8hpp" kind="file"><name>character_types.hpp</name>
+    <member refid="namespaceboost_1_1unicode_1a0" kind="typedef"><name>char8_t</name></member>
+    <member refid="namespaceboost_1_1unicode_1a1" kind="typedef"><name>char16_t</name></member>
+    <member refid="namespaceboost_1_1unicode_1a2" kind="typedef"><name>char32_t</name></member>
+    <member refid="namespaceboost_1_1unicode_1a3" kind="typedef"><name>codepoint</name></member>
+    <member refid="namespaceboost_1_1unicode_1a4" kind="variable"><name>replacement_character</name></member>
+    <member refid="namespaceboost_1_1unicode_1a5" kind="variable"><name>max_bmp</name></member>
+    <member refid="namespaceboost_1_1unicode_1a6" kind="variable"><name>max_codepoint</name></member>
+    <member refid="namespaceboost_1_1unicode_1a7" kind="variable"><name>byte_order_mark</name></member>
+  </compound>
+  <compound refid="codecvt_8hpp" kind="file"><name>codecvt.hpp</name>
+  </compound>
+  <compound refid="fstream_8hpp" kind="file"><name>fstream.hpp</name>
+    <member refid="namespaceboost_1_1unicode_1a8" kind="typedef"><name>fstream</name></member>
+    <member refid="namespaceboost_1_1unicode_1a9" kind="typedef"><name>ifstream</name></member>
+    <member refid="namespaceboost_1_1unicode_1a10" kind="typedef"><name>ofstream</name></member>
+    <member refid="namespaceboost_1_1unicode_1a20" kind="function"><name>use_byte_order_mark</name></member>
+  </compound>
+  <compound refid="uni__character__interface_8hpp" kind="file"><name>uni_character_interface.hpp</name>
+    <member refid="uni__character__interface_8hpp_1a0" kind="define"><name>declare_unichar_properties_interface_v1</name></member>
+    <member refid="namespaceboost_1_1unicode_1_1ucd_1a2" kind="function"><name>is_grapheme_break</name></member>
+    <member refid="namespaceboost_1_1unicode_1_1ucd_1a3" kind="function"><name>find_complex_line_break</name></member>
+    <member refid="namespaceboost_1_1unicode_1_1ucd_1a4" kind="function"><name>get_line_breaks</name></member>
+    <member refid="namespaceboost_1_1unicode_1_1ucd_1a0" kind="variable"><name>g_tbl_grapheme_lookup</name></member>
+    <member refid="namespaceboost_1_1unicode_1_1ucd_1a1" kind="variable"><name>tbl_break_pairs</name></member>
+  </compound>
+  <compound refid="uni__character__properties_8hpp" kind="file"><name>uni_character_properties.hpp</name>
+    <member refid="namespaceboost_1_1unicode_1a11" kind="function"><name>as_string</name></member>
+    <member refid="namespaceboost_1_1unicode_1a12" kind="function"><name>as_string</name></member>
+    <member refid="namespaceboost_1_1unicode_1a13" kind="function"><name>as_string</name></member>
+    <member refid="namespaceboost_1_1unicode_1a14" kind="function"><name>as_string</name></member>
+    <member refid="namespaceboost_1_1unicode_1a15" kind="function"><name>as_string</name></member>
+    <member refid="namespaceboost_1_1unicode_1a16" kind="function"><name>as_string</name></member>
+    <member refid="namespaceboost_1_1unicode_1a17" kind="function"><name>as_string</name></member>
+    <member refid="namespaceboost_1_1unicode_1a18" kind="function"><name>as_string</name></member>
+    <member refid="namespaceboost_1_1unicode_1a19" kind="function"><name>as_string</name></member>
+  </compound>
+  <compound refid="dir_000000" kind="dir"><name>/home/rogier/c++/Unicode/boost_1_33_0/boost/</name>
+  </compound>
+  <compound refid="dir_000001" kind="dir"><name>/home/rogier/c++/Unicode/boost_1_33_0/boost/unicode/</name>
+  </compound>
+</doxygenindex>

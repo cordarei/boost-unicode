@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE section PUBLIC "-//Boost//DTD BoostBook XML V1.0//EN"
+  "http://www.boost.org/tools/boostbook/dtd/boostbook.dtd">
+<section last-revision="$Date: 2004/07/20 17:03:55 $">
+<title>Design notes</title>
+
+<para>
+The library adheres as much to the Unicode standard as possible, and makes the most general form the default.
+For example, it uses UTF-32 rather than UTF-16 or UCS-2 as its internal form.
+UTF-16 and UCS-2 use surrogate pairs to encode characters that take more than 16 bits.
+These characters are unlikely to occur in the data programmers test their programs on.
+After all, not every programmer is well-versed in Linear B or Ethiopian.
+Allowing them to disregard surrogates would be allowing errors to creep into the code that are almost certainly not detected when testing.
+</para>
+
+<section>
+<title>C++ locales</title>
+
+<para>
+Other than the <code>codecvt</code> facets, the Unicode library does not contain any support for C++-style locales.
+Why not?
+</para>
+<itemizedlist>
+	<listitem>
+		The <code>collate</code> facet makes the assumption that strings are represented as arrays of characters, and there is no way it can be optimised for normalised strings, for example.
+		It would definitely be possible to implement a <code>collate</code> facet, but it's bound to be a slow way of comparing Unicode strings.
+	</listitem>
+	<listitem>
+		The <code>ctype</code> facet assumes that the uppercase of one character consists of one character.
+		This is not true in Unicode: for example, German "ß" has "SS" as uppercase (see http://blogs.msdn.com/michkap/archive/2005/04/10/406880.aspx for a complaint about how Microsoft gets this wrong).
+	</listitem>
+</itemizedlist>
+
+</section>
+
+</section>
